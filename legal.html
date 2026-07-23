@@ -1,0 +1,3794 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<!--<< Header Area >>-->
+
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="scriptotheme">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legal | SOSAiTi</title>
+    <meta name="description"
+        content="Read the Privacy Policy, Terms & Conditions, Terms of Use, Cookie Policy and Disclaimer for SOSAiTi Society Management Platform.">
+    <!-- ======== Page title ============ -->
+    <title>Sosaiti- App Landing HTML Template</title>
+    <!--<< Favcion >>-->
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <!--<< Bootstrap min.css >>-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--<< All Min Css >>-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!--<< Animate.css >>-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--<< Magnific popup.css >>-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!--<< MeanMenu.css >>-->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!--<< Swiper Bundle.css >>-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--<< NiceSelect.css >>-->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!--<< Main.css >>-->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <style>
+        /*==================================================
+            LEGAL CENTER
+        ==================================================*/
+        :root {
+            --primary: #0B63F6;
+            --primary-dark: #084CC4;
+            --primary-light: #EDF4FF;
+            --secondary: #0F172A;
+            --text: #4B5563;
+            --heading: #111827;
+            --white: #ffffff;
+            --border: #E5E7EB;
+            --bg: #F7F9FC;
+            --shadow: 0 20px 60px rgba(17, 24, 39, .08);
+            --radius: 18px;
+            --transition: .35s ease;
+        }
+
+        /*==================================================
+            RESET
+        ==================================================*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            font-size: 16px;
+            line-height: 1.8;
+            color: var(--text);
+            background: var(--bg);
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1320px;
+            padding-inline: 15px;
+            margin: auto;
+        }
+
+        /*==================================================
+            TYPOGRAPHY
+        ==================================================*/
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: var(--heading);
+            font-weight: 700;
+            line-height: 1.25;
+        }
+
+        h1 {
+            font-size: 60px;
+        }
+
+        h2 {
+            font-size: 40px;
+        }
+
+        h3 {
+            font-size: 28px;
+        }
+
+        h4 {
+            font-size: 22px;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        /*==================================================
+            HERO
+        ==================================================*/
+
+        .legal-hero {
+            padding: 120px 0;
+            background: linear-gradient(135deg, #0B63F6 0%, #084CC4 100%);
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .legal-hero::before {
+            content: "";
+            position: absolute;
+            width: 450px;
+            height: 450px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, .08);
+            top: -180px;
+            left: -150px;
+
+        }
+
+        .legal-hero::after {
+            content: "";
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, .06);
+            bottom: -220px;
+            right: -180px;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .hero-content .subtitle {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 40px;
+            background: rgba(255, 255, 255, .15);
+            color: #fff;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .hero-content h1 {
+            color: #fff;
+            margin-bottom: 25px;
+        }
+
+        .hero-content p {
+            color: rgba(255, 255, 255, .90);
+            font-size: 18px;
+            max-width: 760px;
+            margin: auto;
+        }
+
+        /*==================================================
+            FILTER BAR
+        ==================================================*/
+        /*==================================================
+FILTER BAR
+==================================================*/
+
+.legal-nav{
+
+    position:sticky;
+
+    top:110px; /* Height of your fixed header */
+
+    z-index:99;
+
+    background:#fff;
+
+    border-bottom:1px solid var(--border);
+
+    box-shadow:0 6px 20px rgba(0,0,0,.04);
+
+}
+
+.filter-wrapper{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+
+    padding:20px 0;
+
+}
+
+        .filter-btn {
+            border: none;
+            outline: none;
+            cursor: pointer;
+            background: #F3F5FA;
+            color: #4B5563;
+            font-size: 15px;
+            font-weight: 600;
+            padding: 13px 26px;
+            border-radius: 40px;
+            transition: var(--transition);
+        }
+
+        .filter-btn:hover {
+            background: var(--primary-light);
+            color: var(--primary);
+        }
+
+        .filter-btn.active {
+            background: var(--primary);
+            color: #fff;
+            box-shadow: 0 12px 30px rgba(11, 99, 246, .22);
+        }
+
+        /*==================================================
+            MAIN LAYOUT
+        ==================================================*/
+        .legal-page {
+            padding: 80px 0 120px;
+        }
+
+        .legal-layout {
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        /*==================================================
+            SIDEBAR
+        ==================================================*/
+        .legal-sidebar {
+            position: sticky;
+            top: 230px;
+        }
+
+        .sidebar-card {
+            background: var(--white);
+            border-radius: var(--radius);
+            padding: 35px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+        }
+
+        .sidebar-card h3 {
+            margin-bottom: 25px;
+            font-size: 24px;
+        }
+
+        .sidebar-card ul {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .sidebar-card li {
+            width: 100%;
+        }
+
+        .sidebar-card a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 18px;
+            border-radius: 12px;
+            transition: var(--transition);
+            color: var(--text);
+            font-weight: 500;
+        }
+
+        .sidebar-card a::after {
+            content: "›";
+            font-size: 20px;
+            opacity: .45;
+            transition: var(--transition);
+        }
+
+        .sidebar-card a:hover {
+            background: var(--primary-light);
+            color: var(--primary);
+            padding-left: 24px;
+        }
+
+        .sidebar-card a:hover::after {
+            opacity: 1;
+            transform: translateX(4px);
+        }
+
+        /*==================================================
+            LEGAL DOCUMENT
+        ==================================================*/
+        .legal-document {
+            display: none;
+            background: var(--white);
+            border-radius: 24px;
+            padding: 60px;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            animation: fadeIn .35s ease;
+        }
+
+        .legal-document.active-document {
+            display: block;
+        }
+
+        .document-header {
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .document-header span {
+            display: inline-block;
+            background: var(--primary-light);
+            color: var(--primary);
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 18px;
+        }
+
+        .document-header h2 {
+            margin-bottom: 14px;
+        }
+
+        .updated {
+            color: #9CA3AF;
+            font-size: 15px;
+            margin: 0;
+        }
+
+        /*==================================================
+            CONTENT
+            ==================================================*/
+        .legal-document h3 {
+            margin-top: 40px;
+            margin-bottom: 18px;
+            font-size: 28px;
+        }
+
+        .legal-document h4 {
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .legal-document p {
+            margin-bottom: 18px;
+            color: var(--text);
+        }
+
+        .legal-document strong {
+            color: var(--heading);
+        }
+
+        .legal-document a {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .legal-document a:hover {
+            text-decoration: underline;
+        }
+
+        /*==================================================
+            LISTS
+        ==================================================*/
+        .legal-document ul {
+            margin: 20px 0 30px;
+            padding-left: 22px;
+            list-style: disc;
+        }
+
+        .legal-document ol {
+            margin: 20px 0 30px;
+            padding-left: 24px;
+        }
+
+        .legal-document li {
+            margin-bottom: 12px;
+            color: var(--text);
+            line-height: 1.8;
+        }
+
+        /*==================================================
+            TABLES
+        ==================================================*/
+        .legal-document table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 35px 0;
+            overflow: hidden;
+            border-radius: 14px;
+        }
+
+        .legal-document th {
+            background: var(--primary);
+            color: #fff;
+            text-align: left;
+            padding: 18px;
+        }
+
+        .legal-document td {
+            padding: 18px;
+            border: 1px solid var(--border);
+        }
+
+        .legal-document tbody tr:nth-child(even) {
+            background: #FAFBFD;
+        }
+
+        /*==================================================
+            BLOCKQUOTE
+        ==================================================*/
+        .legal-document blockquote {
+            border-left: 5px solid var(--primary);
+            background: var(--primary-light);
+            padding: 25px 30px;
+            margin: 35px 0;
+            border-radius: 0 14px 14px 0;
+            font-style: italic;
+        }
+
+        /*==================================================
+            NOTICE BOXES
+        ==================================================*/
+        .notice-box {
+            display: flex;
+            gap: 18px;
+            padding: 25px;
+            margin: 35px 0;
+            border-radius: 16px;
+            background: #FFF9E9;
+            border: 1px solid #FFE28A;
+        }
+
+        .notice-box.info {
+            background: #EEF6FF;
+            border-color: #B8D9FF;
+        }
+
+        .notice-box.success {
+            background: #ECFDF5;
+            border-color: #B7F0D2;
+        }
+
+        .notice-box.warning {
+            background: #FFF8E6;
+            border-color: #FFD26D;
+        }
+
+        .notice-box i {
+            font-size: 26px;
+            color: var(--primary);
+        }
+
+        /*==================================================
+            HORIZONTAL RULE
+        ==================================================*/
+        .legal-document hr {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 45px 0;
+        }
+
+        /*==================================================
+            CODE
+        ==================================================*/
+        .legal-document code {
+            background: #F3F4F6;
+            padding: 3px 8px;
+            border-radius: 6px;
+            font-family: Consolas, monospace;
+            font-size: 14px;
+        }
+
+        .legal-document pre {
+            background: #111827;
+            color: #fff;
+            padding: 25px;
+            border-radius: 16px;
+            overflow: auto;
+            margin: 30px 0;
+        }
+
+        /*==================================================
+CONTACT SECTION
+==================================================*/
+        .legal-contact {
+            padding: 0 0 100px;
+        }
+
+        .contact-card {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: #fff;
+            padding: 70px;
+            border-radius: 28px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .contact-card::before {
+            content: "";
+            position: absolute;
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, .08);
+            top: -140px;
+            right: -120px;
+        }
+
+        .contact-card>* {
+            position: relative;
+            z-index: 2;
+        }
+
+        .contact-card h2 {
+            color: #fff;
+            margin-bottom: 18px;
+        }
+
+        .contact-card p {
+            color: rgba(255, 255, 255, .88);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 45px;
+        }
+
+        .contact-item {
+            background: rgba(255, 255, 255, .10);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, .15);
+            padding: 30px;
+            border-radius: 18px;
+        }
+
+        .contact-item h4 {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .contact-item p {
+            margin: 0;
+        }
+
+        /*==================================================
+FOOTER
+==================================================*/
+        .legal-footer {
+            background: #0F172A;
+            padding: 40px 0;
+        }
+
+        .legal-footer .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .legal-footer p {
+            margin: 0;
+            color: #CBD5E1;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-links a {
+            color: #CBD5E1;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: #fff;
+        }
+
+        /*==================================================
+SCROLL TO TOP
+==================================================*/
+        .scroll-top {
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+            width: 55px;
+            height: 55px;
+            border: none;
+            border-radius: 50%;
+            background: var(--primary);
+            color: #fff;
+            font-size: 22px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: var(--transition);
+            box-shadow: 0 15px 35px rgba(11, 99, 246, .30);
+            z-index: 999;
+        }
+
+        .scroll-top.show {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .scroll-top:hover {
+            background: var(--primary-dark);
+            transform: translateY(-4px);
+        }
+
+        /*==================================================
+ANIMATIONS
+==================================================*/
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /*==================================================
+RESPONSIVE
+==================================================*/
+        @media(max-width:1200px) {
+            .legal-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .legal-sidebar {
+                position: static;
+            }
+        }
+
+        @media(max-width:991px) {
+            h1 {
+                font-size: 46px;
+            }
+
+            h2 {
+                font-size: 34px;
+            }
+
+            .legal-document {
+                padding: 40px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-card {
+                padding: 50px 35px;
+            }
+        }
+
+        @media(max-width:767px) {
+            .legal-hero {
+                padding: 80px 0;
+            }
+
+            h1 {
+                font-size: 38px;
+            }
+
+            h2 {
+                font-size: 30px;
+            }
+
+            .hero-content p {
+                font-size: 16px;
+            }
+
+            .filter-wrapper {
+                justify-content: flex-start;
+                overflow-x: auto;
+                flex-wrap: nowrap;
+                padding-bottom: 10px;
+                scrollbar-width: thin;
+            }
+
+            .filter-btn {
+                white-space: nowrap;
+            }
+
+            .legal-document {
+                padding: 30px 22px;
+            }
+
+            .sidebar-card {
+                padding: 25px;
+            }
+
+            .contact-card {
+                padding: 35px 25px;
+            }
+
+            .legal-footer .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .footer-links {
+                justify-content: center;
+            }
+        }
+
+        /*==================================================
+PRINT
+==================================================*/
+        @media print {
+
+            .legal-nav,
+            .legal-sidebar,
+            .legal-contact,
+            .legal-footer,
+            .scroll-top {
+                display: none !important;
+            }
+
+            body {
+                background: #fff;
+            }
+
+            .legal-document {
+                display: block !important;
+                box-shadow: none;
+                border: none;
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Preloader Start -->
+    <div id="preloader" class="preloader">
+        <div class="animation-preloader">
+            <div class="spinner">
+            </div>
+            <div class="txt-loading">
+                <span data-text-preloader="S" class="letters-loading">
+                    S
+                </span>
+                <span data-text-preloader="O" class="letters-loading">
+                    O
+                </span>
+                <span data-text-preloader="S" class="letters-loading">
+                    S
+                </span>
+                <span data-text-preloader="A" class="letters-loading">
+                    A
+                </span>
+                <span data-text-preloader="i" class="letters-loading">
+                    i
+                </span>
+                <span data-text-preloader="T" class="letters-loading">
+                    T
+                </span>
+                <span data-text-preloader="i" class="letters-loading">
+                    i
+                </span>
+            </div>
+            <p class="text-center">SHART SOCIETY LIVING</p>
+        </div>
+        <div class="loader">
+            <div class="row">
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mouse Cursor Start -->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+
+    <!-- Offcanvas Area Start -->
+    <div class="fix-area">
+        <div class="offcanvas__info">
+            <div class="offcanvas__wrapper">
+                <div class="offcanvas__content">
+                    <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                        <div class="offcanvas__logo">
+                            <a href="index.html">
+                                <img src="assets/images/logo/logo.svg" alt="logo-img">
+                            </a>
+                        </div>
+                        <div class="offcanvas__close">
+                            <button>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="text d-none d-xl-block">
+                        Nullam dignissim, ante scelerisque the is euismod fermentum odio sem semper the is erat, a
+                        feugiat leo urna eget eros. Duis Aenean a imperdiet risus.
+                    </p>
+                    <div class="mobile-menu fix mb-3"></div>
+                    <div class="offcanvas__contact">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon">
+                                    <i class="fal fa-map-marker-alt"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">Main Street, Melbourne, Australia</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-envelope"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="mailto:info@example.com"><span
+                                            class="mailto:info@example.com">info@example.com</span></a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-clock"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="far fa-phone"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="tel:+11002345909">+11002345909</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="header-button mt-4">
+                            <a href="contact.html" class="theme-btn text-center">
+                                <span>Get A Quote<i class="fa-solid fa-arrow-right-long"></i></span>
+                            </a>
+                        </div>
+                        <div class="social-icon d-flex align-items-center">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+
+    <!-- Header Section Start -->
+    <header class="header-section-2">
+        <div id="header-sticky" class="header-2">
+            <div class="container">
+                <div class="mega-menu-wrapper">
+                    <div class="header-main">
+                        <div class="header-left">
+                            <div class="logo">
+                                <a href="index.html" class="header-logo">
+                                    <img src="assets/images/logo/logo2.svg" alt="logo-img">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="header-middle">
+                            <div class="mean__menu-wrapper">
+                                <div class="main-menu">
+                                    <nav id="mobile-menu">
+                                        <ul>
+                                            <li>
+                                                <a href="index.html">
+                                                    Home
+                                                </a>
+
+                                            </li>
+
+                                            <li>
+                                                <a href="software.html">Software</a>
+                                            </li>
+                                            <li>
+                                                <a href="mobile-app.html">Mobile App</a>
+                                            </li>
+                                            <li>
+                                                <a href="about.html">About Us</a>
+                                            </li>
+
+
+                                            <li>
+                                                <a href="contact.html">Contact Us</a>
+                                            </li>
+                                            <li>
+                                                <a href="legal.html">Legal</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-right d-flex justify-content-end align-items-center">
+                            <a href="#0" class="search-trigger search-icon"><i class="fal fa-search"></i></a>
+
+                            <div class="header-button ms-4">
+                                <a href="contact.html" class="theme-btn">
+                                    <span>
+                                        Get Started
+                                        <i class="fa-solid fa-arrow-right-long"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="header__hamburger d-block d-xl-none my-auto">
+                                <div class="sidebar__toggle">
+                                    <i class="fas fa-bars"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Area Start -->
+    <div class="search-wrap">
+        <div class="search-inner">
+            <i class="fas fa-times search-close" id="search-close"></i>
+            <div class="search-cell">
+                <form method="get">
+                    <div class="search-field-holder">
+                        <input type="search" class="main-search-input" placeholder="Search...">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--========================================
+        HERO
+    =========================================-->
+    <section class="legal-hero">
+        <div class="container">
+            <div class="hero-content"><span class="subtitle">
+                    Legal Information
+                </span>
+                <h1>
+                    Legal
+                </h1>
+                <p>
+                    Review the legal policies that govern the use of the SOSAiTi
+                    website, software dashboard and mobile application.
+                    These documents explain your rights, responsibilities,
+                    privacy practices and the terms under which our services
+                    are provided.
+                </p>
+            </div>
+        </div>
+    </section><!--========================================
+        FILTER NAVIGATION
+    =========================================-->
+    <section class="legal-nav">
+        <div class="container">
+            <div class="filter-wrapper">
+                <button class="filter-btn active" data-filter="privacy">Privacy Policy</button>
+                <button class="filter-btn" data-filter="terms">Terms & Conditions</button>
+                <button class="filter-btn" data-filter="use">Terms of Use</button>
+                <!-- <button class="filter-btn" data-filter="refund">Refund Policy</button> -->
+                <button class="filter-btn" data-filter="cookies">Cookie Policy</button>
+                <button class="filter-btn" data-filter="disclaimer">Disclaimer</button>
+            </div>
+        </div>
+    </section><!--========================================
+        MAIN CONTENT
+    =========================================-->
+    <main class="legal-page">
+        <div class="container">
+            <div class="legal-layout"><!--==============================
+                    SIDEBAR
+                ==============================-->
+                <aside class="legal-sidebar">
+                    <div class="sidebar-card">
+                        <h3>
+                            Table of Contents
+                        </h3>
+                        <ul>
+                            <li>
+                                <a href="#privacy">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#terms">
+                                    Terms & Conditions
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#use">
+                                    Terms of Use
+                                </a>
+                            </li>
+                            <!-- <li>
+                                <a href="#refund">
+                                    Refund Policy
+                                </a>
+                            </li> -->
+                            <li>
+                                <a href="#cookies">
+                                    Cookie Policy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#disclaimer">
+                                    Disclaimer
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside><!--==============================
+                    CONTENT
+                ==============================-->
+                <div class="legal-content"><!--==========================
+                        PRIVACY POLICY
+                    ===========================-->
+                    <section id="privacy" class="legal-document active-document">
+                        <div class="document-header"><span>
+                                Legal Document
+                            </span>
+                            <h2>
+                                Privacy Policy
+                            </h2>
+                            <p class="updated">
+                                Last Updated: July 2026
+                            </p>
+                        </div>
+                        <h3>1. Introduction</h3>
+
+                        <p>
+                            Welcome to SOSAiTi ("Company", "we", "our", or "us"). Your privacy is important to us. This
+                            Privacy Policy explains how we collect, use, disclose, store and protect your personal
+                            information when you use the SOSAiTi website, web dashboard, and mobile application
+                            (collectively referred to as the "Platform").
+                        </p>
+
+                        <p>
+                            By creating an account, accessing, or using our Platform, you agree to the collection and
+                            use of information in accordance with this Privacy Policy.
+                        </p>
+
+                        <hr>
+
+                        <h3>2. Information We Collect</h3>
+
+                        <p>
+                            We collect only the information necessary to provide our services efficiently and securely.
+                        </p>
+
+                        <h4>2.1 Personal Information</h4>
+
+                        <ul>
+
+                            <li>Full Name</li>
+
+                            <li>Email Address</li>
+
+                            <li>Mobile Number</li>
+
+                            <li>Profile Photograph (optional)</li>
+
+                            <li>Flat or Unit Number</li>
+
+                            <li>Building/Wing Details</li>
+
+                            <li>Society Name</li>
+
+                            <li>Resident Type (Owner or Tenant)</li>
+
+                        </ul>
+
+                        <h4>2.2 Society Information</h4>
+
+                        <ul>
+
+                            <li>Society Name</li>
+
+                            <li>Address</li>
+
+                            <li>Buildings and Wings</li>
+
+                            <li>Flat Information</li>
+
+                            <li>Resident Directory</li>
+
+                            <li>Committee Member Information</li>
+
+                            <li>Society Registration Details (if provided)</li>
+
+                        </ul>
+
+                        <h4>2.3 Financial Information</h4>
+
+                        <ul>
+
+                            <li>Maintenance Bills</li>
+
+                            <li>Payment Status</li>
+
+                            <li>Payment Receipts</li>
+
+                            <li>Outstanding Dues</li>
+
+                            <li>Income Records</li>
+
+                            <li>Expense Records</li>
+
+                            <li>Financial Reports</li>
+
+                        </ul>
+
+                        <p>
+                            SOSAiTi does not store your debit card number, credit card number, CVV, UPI PIN, internet
+                            banking password or any sensitive banking credentials.
+                        </p>
+
+                        <hr>
+
+                        <h3>3. Information Generated While Using the Platform</h3>
+
+                        <p>
+                            While using the Platform, additional information may be generated and stored.
+                        </p>
+
+                        <ul>
+
+                            <li>Maintenance Payment History</li>
+
+                            <li>Complaint Records</li>
+
+                            <li>Complaint Status Updates</li>
+
+                            <li>Society Notices</li>
+
+                            <li>Announcements</li>
+
+                            <li>Maintenance Receipts</li>
+
+                            <li>Financial Reports</li>
+
+                            <li>Audit Logs</li>
+
+                            <li>Login History</li>
+
+                            <li>Account Activity</li>
+
+                        </ul>
+
+                        <hr>
+
+                        <h3>4. Device & Technical Information</h3>
+
+                        <p>
+                            To improve performance, security and reliability, we may automatically collect technical
+                            information including:
+                        </p>
+
+                        <ul>
+
+                            <li>IP Address</li>
+
+                            <li>Browser Type</li>
+
+                            <li>Operating System</li>
+
+                            <li>Device Model</li>
+
+                            <li>Application Version</li>
+
+                            <li>Crash Reports</li>
+
+                            <li>Diagnostic Information</li>
+
+                            <li>Session Information</li>
+
+                            <li>Anonymous Usage Analytics</li>
+
+                        </ul>
+
+                        <hr>
+
+                        <h3>5. How We Use Your Information</h3>
+
+                        <p>
+                            The information collected is used solely for operating and improving the Platform.
+                        </p>
+
+                        <ul>
+
+                            <li>Create and manage user accounts.</li>
+
+                            <li>Generate maintenance bills.</li>
+
+                            <li>Record maintenance payments.</li>
+
+                            <li>Generate receipts.</li>
+
+                            <li>Prepare financial reports.</li>
+
+                            <li>Track income and expenses.</li>
+
+                            <li>Publish society notices.</li>
+
+                            <li>Manage resident complaints.</li>
+
+                            <li>Authenticate users.</li>
+
+                            <li>Detect fraudulent activities.</li>
+
+                            <li>Improve application performance.</li>
+
+                            <li>Provide technical support.</li>
+
+                            <li>Comply with applicable laws.</li>
+
+                        </ul>
+
+                        <hr>
+
+                        <h3>6. Payment Processing</h3>
+
+                        <p>
+                            Maintenance payments made through SOSAiTi are processed by trusted third-party payment
+                            gateway providers.
+                        </p>
+
+                        <p>
+                            SOSAiTi does not collect or store:
+                        </p>
+
+                        <ul>
+
+                            <li>Debit Card Numbers</li>
+
+                            <li>Credit Card Numbers</li>
+
+                            <li>CVV Numbers</li>
+
+                            <li>UPI PINs</li>
+
+                            <li>Internet Banking Passwords</li>
+
+                        </ul>
+
+                        <p>
+                            Payment providers process transactions according to their own security standards and privacy
+                            policies.
+                        </p>
+
+                        <hr>
+
+                        <h3>7. Sharing of Information</h3>
+
+                        <p>
+                            We never sell or rent your personal information.
+                        </p>
+
+                        <p>
+                            Information may be shared only with:
+                        </p>
+
+                        <ul>
+
+                            <li>Authorized Society Administrators</li>
+
+                            <li>Committee Members with appropriate permissions</li>
+
+                            <li>Cloud Hosting Providers</li>
+
+                            <li>Payment Gateway Providers</li>
+
+                            <li>SMS and Email Service Providers</li>
+
+                            <li>Government Authorities when legally required</li>
+
+                        </ul>
+
+                        <hr>
+
+                        <h3>8. Data Security</h3>
+
+                        <p>
+                            We implement commercially reasonable administrative, technical and organizational safeguards
+                            to protect your information.
+                        </p>
+
+                        <ul>
+
+                            <li>HTTPS Encryption</li>
+
+                            <li>Secure Authentication</li>
+
+                            <li>Role-Based Access Control</li>
+
+                            <li>Password Encryption</li>
+
+                            <li>Secure Cloud Infrastructure</li>
+
+                            <li>Regular Security Monitoring</li>
+
+                            <li>Database Backup Procedures</li>
+
+                        </ul>
+
+                        <p>
+                            Although we strive to protect your information, no method of electronic transmission or
+                            storage can be guaranteed to be completely secure.
+                        </p>
+
+                        <hr>
+
+                        <h3>9. Data Retention</h3>
+
+                        <p>
+                            We retain personal and society information only for as long as necessary to:
+                        </p>
+
+                        <ul>
+
+                            <li>Provide Platform Services</li>
+
+                            <li>Maintain Society Records</li>
+
+                            <li>Generate Financial Reports</li>
+
+                            <li>Resolve Disputes</li>
+
+                            <li>Meet Legal Obligations</li>
+
+                            <li>Prevent Fraud</li>
+
+                        </ul>
+
+                        <p>
+                            When information is no longer required, it will be securely deleted or anonymized where
+                            appropriate.
+                        </p>
+
+                        <hr>
+
+                        <h3>10. Your Rights</h3>
+
+                        <p>
+                            Subject to applicable law, you may have the right to:
+                        </p>
+
+                        <ul>
+
+                            <li>Access your personal information.</li>
+
+                            <li>Correct inaccurate information.</li>
+
+                            <li>Update your profile.</li>
+
+                            <li>Request deletion of your account.</li>
+
+                            <li>Request a copy of your information.</li>
+
+                            <li>Withdraw consent where permitted.</li>
+
+                        </ul>
+
+                        <hr>
+
+                        <h3>11. Cookies & Similar Technologies</h3>
+
+                        <p>
+                            Our website may use cookies and similar technologies to:
+                        </p>
+
+                        <ul>
+
+                            <li>Maintain login sessions.</li>
+
+                            <li>Remember user preferences.</li>
+
+                            <li>Improve website performance.</li>
+
+                            <li>Analyze website usage.</li>
+
+                            <li>Enhance security.</li>
+
+                        </ul>
+
+                        <p>
+                            You may disable cookies through your browser settings, although certain features may not
+                            function correctly.
+                        </p>
+
+                        <hr>
+
+                        <h3>12. Third-Party Services</h3>
+
+                        <p>
+                            SOSAiTi may integrate with third-party services including:
+                        </p>
+
+                        <ul>
+
+                            <li>Payment Gateway Providers</li>
+
+                            <li>Cloud Hosting Services</li>
+
+                            <li>Email Providers</li>
+
+                            <li>SMS Providers</li>
+
+                            <li>Push Notification Services</li>
+
+                            <li>Analytics Services</li>
+
+                        </ul>
+
+                        <p>
+                            These providers maintain their own privacy policies governing their services.
+                        </p>
+
+                        <hr>
+
+                        <h3>13. Children's Privacy</h3>
+
+                        <p>
+                            The Platform is intended for use by housing societies and their authorized residents. We do
+                            not knowingly collect personal information from children without appropriate authorization
+                            where required by law.
+                        </p>
+
+                        <hr>
+
+                        <h3>14. Account Security</h3>
+
+                        <p>
+                            Users are responsible for:
+                        </p>
+
+                        <ul>
+
+                            <li>Maintaining the confidentiality of their login credentials.</li>
+
+                            <li>Using strong passwords.</li>
+
+                            <li>Preventing unauthorized access to their accounts.</li>
+
+                            <li>Reporting suspected unauthorized access immediately.</li>
+
+                            <li>Logging out from shared devices.</li>
+
+                        </ul>
+
+                        <hr>
+
+                        <h3>15. Changes to this Privacy Policy</h3>
+
+                        <p>
+                            We may revise this Privacy Policy periodically to reflect changes in our services, legal
+                            obligations or business practices. The revised version will become effective upon
+                            publication on the Platform unless otherwise stated.
+                        </p>
+
+                        <hr>
+
+                        <h3>16. Contact Us</h3>
+
+                        <p>
+                            If you have any questions regarding this Privacy Policy or your personal information, please
+                            contact us.
+                        </p>
+
+                        <p>
+
+                            <strong>SOSAiTi</strong><br>
+
+                            Email: support@sosaiti.com<br>
+
+                            Website: https://www.sosaiti.com
+
+                        </p>
+                    </section><!--==========================
+                        TERMS & CONDITIONS
+                    ===========================-->
+                    <section id="terms" class="legal-document">
+                        <div class="document-header"><span>
+                                Legal Document
+                            </span>
+                            <h2>
+                                Terms & Conditions
+                            </h2>
+                            <p class="updated">
+                                Last Updated: July 2026
+                            </p>
+                        </div>
+                        <h3>1. Acceptance of Terms</h3>
+
+                        <p>
+                            Welcome to SOSAiTi ("Company", "we", "our", or "us"). These Terms &amp; Conditions
+                            ("Terms") govern your access to and use of the SOSAiTi website, web dashboard, mobile
+                            application, and all related services (collectively, the "Platform").
+                        </p>
+
+                        <p>
+                            By registering an account, accessing, or using the Platform, you acknowledge that you have
+                            read, understood, and agree to be bound by these Terms. If you do not agree to these Terms,
+                            you must not access or use the Platform.
+                        </p>
+
+                        <p>
+                            These Terms apply to all users of the Platform, including society administrators, committee
+                            members, residents, tenants, property owners, visitors, and any other authorized users.
+                        </p>
+
+                        <hr>
+
+                        <h3>2. Definitions</h3>
+
+                        <p>
+                            For the purposes of these Terms, the following definitions apply:
+                        </p>
+
+                        <ul>
+
+                            <li><strong>Platform</strong> refers to the SOSAiTi website, software dashboard, mobile
+                                application, APIs, and all related services.</li>
+
+                            <li><strong>Society</strong> refers to a registered housing society, apartment complex,
+                                residential community, or any organization using the Platform.</li>
+
+                            <li><strong>Administrator</strong> means an individual authorized by a society to manage its
+                                account and administrative functions.</li>
+
+                            <li><strong>Committee Member</strong> means a user granted administrative permissions by the
+                                society.</li>
+
+                            <li><strong>Resident</strong> means an owner, tenant, or occupant registered within a
+                                society.</li>
+
+                            <li><strong>User</strong> refers to any person who accesses or uses the Platform.</li>
+
+                            <li><strong>Content</strong> includes text, notices, complaints, financial records, images,
+                                files, reports, and any information submitted through the Platform.</li>
+
+                            <li><strong>Services</strong> means all features provided by SOSAiTi including maintenance
+                                tracking, online payments, complaints, notices, resident management, financial
+                                reporting, and related functionality.</li>
+
+                        </ul>
+
+                        <hr>
+
+                        <h3>3. Eligibility</h3>
+
+                        <p>
+                            To use the Platform, you must:
+                        </p>
+
+                        <ul>
+
+                            <li>Be legally capable of entering into a binding agreement under applicable law.</li>
+
+                            <li>Use the Platform only for lawful purposes.</li>
+
+                            <li>Provide accurate and complete registration information.</li>
+
+                            <li>Use the Platform only if authorized by your housing society where applicable.</li>
+
+                        </ul>
+
+                        <p>
+                            If you are using the Platform on behalf of a housing society or other organization, you
+                            represent that you have the authority to bind that organization to these Terms.
+                        </p>
+
+                        <hr>
+
+                        <h3>4. User Accounts</h3>
+
+                        <p>
+                            Certain features require the creation of an account.
+                        </p>
+
+                        <p>
+                            When creating an account, you agree to:
+                        </p>
+
+                        <ul>
+
+                            <li>Provide complete and accurate information.</li>
+
+                            <li>Keep your information updated.</li>
+
+                            <li>Maintain the confidentiality of your password.</li>
+
+                            <li>Use a strong password.</li>
+
+                            <li>Prevent unauthorized access to your account.</li>
+
+                            <li>Notify SOSAiTi immediately if you suspect unauthorized access.</li>
+
+                        </ul>
+
+                        <p>
+                            You are responsible for all activities that occur under your account unless caused by our
+                            negligence.
+                        </p>
+
+                        <p>
+                            We reserve the right to suspend or terminate accounts containing inaccurate, misleading,
+                            fraudulent, or unauthorized information.
+                        </p>
+
+                        <hr>
+
+                        <h3>5. Society Administrator Responsibilities</h3>
+
+                        <p>
+                            Society administrators play an essential role in maintaining accurate records within the
+                            Platform.
+                        </p>
+
+                        <p>
+                            Administrators are responsible for:
+                        </p>
+
+                        <ul>
+
+                            <li>Maintaining accurate resident records.</li>
+
+                            <li>Managing maintenance bills and dues.</li>
+
+                            <li>Publishing notices responsibly.</li>
+
+                            <li>Recording society income and expenses accurately.</li>
+
+                            <li>Maintaining financial records.</li>
+
+                            <li>Managing user permissions.</li>
+
+                            <li>Protecting administrator credentials.</li>
+
+                            <li>Ensuring only authorized individuals receive administrative access.</li>
+
+                        </ul>
+
+                        <p>
+                            Administrators acknowledge that financial reports, maintenance records, and resident
+                            information displayed by the Platform depend on the accuracy of information entered by the
+                            society.
+                        </p>
+
+                        <p>
+                            SOSAiTi is not responsible for incorrect records resulting from inaccurate or incomplete
+                            information entered by administrators or committee members.
+                        </p>
+
+                        <hr>
+
+                        <h3>6. Resident Responsibilities</h3>
+
+                        <p>
+                            Residents using the Platform agree to:
+                        </p>
+
+                        <ul>
+
+                            <li>Maintain accurate profile information.</li>
+
+                            <li>Review maintenance bills promptly.</li>
+
+                            <li>Pay maintenance charges within applicable deadlines.</li>
+
+                            <li>Use the complaint system responsibly.</li>
+
+                            <li>Treat committee members and other residents respectfully.</li>
+
+                            <li>Avoid submitting false, misleading, defamatory, or offensive information.</li>
+
+                            <li>Keep login credentials confidential.</li>
+
+                        </ul>
+
+                        <p>
+                            Residents remain responsible for verifying the accuracy of maintenance payments and promptly
+                            notifying their society if discrepancies are identified.
+                        </p>
+
+                        <hr>
+
+                        <h3>7. User Conduct</h3>
+
+                        <p>
+                            All users must use the Platform responsibly and in accordance with applicable laws.
+                        </p>
+
+                        <p>
+                            Users must not:
+                        </p>
+
+                        <ul>
+
+                            <li>Attempt unauthorized access to the Platform.</li>
+
+                            <li>Interfere with system security.</li>
+
+                            <li>Upload malicious software or viruses.</li>
+
+                            <li>Use automated tools to scrape or harvest data.</li>
+
+                            <li>Impersonate another individual or organization.</li>
+
+                            <li>Upload illegal, abusive, threatening, defamatory, or obscene content.</li>
+
+                            <li>Attempt to disrupt Platform availability.</li>
+
+                            <li>Circumvent authentication or security measures.</li>
+
+                            <li>Misuse financial reporting features.</li>
+
+                            <li>Submit fraudulent maintenance payments.</li>
+
+                            <li>Create duplicate or fake accounts.</li>
+
+                        </ul>
+
+                        <p>
+                            Violation of these provisions may result in immediate suspension or permanent termination of
+                            access to the Platform.
+                        </p>
+
+                        <hr>
+
+                        <h3>8. Account Security</h3>
+
+                        <p>
+                            Users are solely responsible for safeguarding their login credentials and devices.
+                        </p>
+
+                        <p>
+                            You agree to:
+                        </p>
+
+                        <ul>
+
+                            <li>Keep passwords confidential.</li>
+
+                            <li>Log out of shared devices after use.</li>
+
+                            <li>Enable additional security features where available.</li>
+
+                            <li>Promptly report any suspected unauthorized activity.</li>
+
+                        </ul>
+
+                        <p>
+                            SOSAiTi cannot be held responsible for losses arising from unauthorized access resulting
+                            from compromised user credentials or failure to follow reasonable security practices.
+                        </p>
+
+                        <hr>
+
+                        <h3>9. Availability of Services</h3>
+
+                        <p>
+                            We strive to provide reliable and uninterrupted services. However, the Platform may
+                            occasionally become unavailable due to scheduled maintenance, software updates,
+                            infrastructure issues, internet connectivity problems, third-party service disruptions, or
+                            circumstances beyond our reasonable control.
+                        </p>
+
+                        <p>
+                            We may modify, improve, suspend, or discontinue any feature of the Platform at any time
+                            without prior notice where reasonably necessary for operational, security, or legal reasons.
+                        </p>
+                        <hr>
+
+                        <h3>10. Payments and Billing</h3>
+
+                        <p>
+                            SOSAiTi enables housing societies to manage maintenance billing and allows residents to
+                            make online maintenance payments through integrated third-party payment service providers.
+                        </p>
+
+                        <p>
+                            By using the payment features of the Platform, you acknowledge and agree that:
+                        </p>
+
+                        <ul>
+
+                            <li>Maintenance charges are determined solely by your housing society.</li>
+
+                            <li>SOSAiTi does not calculate, approve, or modify maintenance amounts unless instructed by
+                                authorized society administrators.</li>
+
+                            <li>All payment obligations remain between the resident and the housing society.</li>
+
+                            <li>Online payments are processed by authorized third-party payment gateways.</li>
+
+                            <li>Transaction processing times may vary depending on the payment provider.</li>
+
+                            <li>Additional convenience or processing fees, if any, will be displayed before payment
+                                confirmation.</li>
+
+                        </ul>
+
+                        <p>
+                            SOSAiTi is not responsible for payment delays caused by banks, payment gateways, UPI
+                            providers, internet service interruptions, or other third-party systems.
+                        </p>
+
+                        <hr>
+
+                        <h3>11. Failed Transactions</h3>
+
+                        <p>
+                            Occasionally, payment transactions may fail or remain pending due to circumstances beyond
+                            our control.
+                        </p>
+
+                        <p>
+                            Examples include:
+                        </p>
+
+                        <ul>
+
+                            <li>Bank server downtime</li>
+
+                            <li>UPI service interruptions</li>
+
+                            <li>Network failures</li>
+
+                            <li>Payment gateway outages</li>
+
+                            <li>Insufficient account balance</li>
+
+                            <li>Incorrect payment credentials</li>
+
+                        </ul>
+
+                        <p>
+                            If a payment fails after funds have been debited, users should first contact their bank or
+                            payment provider. Where applicable, refunds are generally processed by the payment provider
+                            according to their policies.
+                        </p>
+
+                        <p>
+                            SOSAiTi cannot guarantee refund timelines for failed banking transactions.
+                        </p>
+
+                        <hr>
+
+                        <h3>12. Financial Records</h3>
+
+                        <p>
+                            Financial reports generated by the Platform are based entirely on information entered by
+                            authorized administrators and recorded payment transactions.
+                        </p>
+
+                        <p>
+                            Although SOSAiTi provides reporting tools, we do not audit or verify the financial accuracy
+                            of any society's accounting records.
+                        </p>
+
+                        <p>
+                            Societies remain solely responsible for:
+                        </p>
+
+                        <ul>
+
+                            <li>Income records</li>
+
+                            <li>Expense entries</li>
+
+                            <li>Maintenance calculations</li>
+
+                            <li>Financial statements</li>
+
+                            <li>Accounting compliance</li>
+
+                            <li>Tax compliance</li>
+
+                        </ul>
+
+                        <hr>
+
+                        <h3>13. Intellectual Property</h3>
+
+                        <p>
+                            The Platform, including its software, source code, databases, user interface, graphics,
+                            logos, trademarks, documentation, text, designs, icons, and other materials are owned by or
+                            licensed to SOSAiTi and are protected under applicable intellectual property laws.
+                        </p>
+
+                        <p>
+                            Except as expressly permitted, users may not:
+                        </p>
+
+                        <ul>
+
+                            <li>Copy the software.</li>
+
+                            <li>Modify the software.</li>
+
+                            <li>Distribute the software.</li>
+
+                            <li>Reverse engineer the software.</li>
+
+                            <li>Decompile the Platform.</li>
+
+                            <li>Attempt to extract source code.</li>
+
+                            <li>Create derivative works.</li>
+
+                            <li>Remove copyright notices.</li>
+
+                            <li>Use SOSAiTi branding without written permission.</li>
+
+                        </ul>
+
+                        <p>
+                            Nothing contained in these Terms transfers ownership of our intellectual property to users.
+                        </p>
+
+                        <hr>
+
+                        <h3>14. User Content</h3>
+
+                        <p>
+                            Users retain ownership of the information they upload to the Platform, including complaints,
+                            notices, announcements, documents, images, and other content.
+                        </p>
+
+                        <p>
+                            By submitting content through the Platform, you grant SOSAiTi a limited, non-exclusive,
+                            royalty-free license to host, process, store, display, transmit, and back up such content
+                            solely for the purpose of providing and improving the Services.
+                        </p>
+
+                        <p>
+                            You represent that you have the legal right to upload any content you submit and that it
+                            does not infringe the rights of any third party.
+                        </p>
+
+                        <hr>
+
+                        <h3>15. Acceptable Use Policy</h3>
+
+                        <p>
+                            Users agree to use the Platform responsibly and in accordance with applicable laws.
+                        </p>
+
+                        <p>
+                            Users must not:
+                        </p>
+
+                        <ul>
+
+                            <li>Attempt unauthorized access to any account.</li>
+
+                            <li>Upload malicious software.</li>
+
+                            <li>Transmit viruses or ransomware.</li>
+
+                            <li>Perform penetration testing without authorization.</li>
+
+                            <li>Harvest resident information.</li>
+
+                            <li>Send spam notices.</li>
+
+                            <li>Publish misleading financial records.</li>
+
+                            <li>Harass, threaten, or intimidate other users.</li>
+
+                            <li>Upload illegal or offensive material.</li>
+
+                            <li>Interfere with Platform operations.</li>
+
+                            <li>Use automated bots to overload the Platform.</li>
+
+                            <li>Attempt to bypass security controls.</li>
+
+                        </ul>
+
+                        <p>
+                            We reserve the right to investigate suspected misuse and cooperate with law enforcement
+                            authorities where required.
+                        </p>
+
+                        <hr>
+
+                        <h3>16. Third-Party Services</h3>
+
+                        <p>
+                            The Platform may integrate with third-party services including:
+                        </p>
+
+                        <ul>
+
+                            <li>Payment gateways</li>
+
+                            <li>Cloud hosting providers</li>
+
+                            <li>Email delivery services</li>
+
+                            <li>SMS gateways</li>
+
+                            <li>Push notification services</li>
+
+                            <li>Analytics providers</li>
+
+                            <li>Authentication providers</li>
+
+                        </ul>
+
+                        <p>
+                            These services are governed by their own terms and privacy policies. SOSAiTi is not
+                            responsible for the availability, security, or functionality of third-party services.
+                        </p>
+
+                        <hr>
+
+                        <h3>17. Service Modifications</h3>
+
+                        <p>
+                            We continuously improve the Platform and may introduce, modify, suspend, or remove features
+                            at any time.
+                        </p>
+
+                        <p>
+                            Updates may include:
+                        </p>
+
+                        <ul>
+
+                            <li>New functionality</li>
+
+                            <li>Security improvements</li>
+
+                            <li>Performance enhancements</li>
+
+                            <li>User interface updates</li>
+
+                            <li>Bug fixes</li>
+
+                            <li>Infrastructure upgrades</li>
+
+                        </ul>
+
+                        <p>
+                            Where practical, major changes affecting users will be communicated in advance.
+                        </p>
+
+                        <hr>
+
+                        <h3>18. Suspension and Termination</h3>
+
+                        <p>
+                            SOSAiTi reserves the right to suspend or terminate any account, with or without prior
+                            notice where permitted by law, if we reasonably believe that a user has:
+                        </p>
+
+                        <ul>
+
+                            <li>Violated these Terms.</li>
+
+                            <li>Submitted fraudulent information.</li>
+
+                            <li>Attempted unauthorized access.</li>
+
+                            <li>Compromised Platform security.</li>
+
+                            <li>Used the Platform for illegal purposes.</li>
+
+                            <li>Repeatedly abused Platform features.</li>
+
+                            <li>Uploaded harmful or malicious content.</li>
+
+                            <li>Violated applicable laws.</li>
+
+                        </ul>
+
+                        <p>
+                            Upon termination, access to the Platform may be restricted or revoked. Certain records may
+                            be retained where required to comply with legal obligations, resolve disputes, prevent
+                            fraud, or enforce our agreements.
+                        </p>
+                        <hr>
+
+                        <h3>19. Disclaimer of Warranties</h3>
+
+                        <p>
+                            The Platform is provided on an "as is" and "as available" basis to the fullest extent
+                            permitted by applicable law.
+                        </p>
+
+                        <p>
+                            While SOSAiTi makes reasonable efforts to provide reliable and secure services, we do not
+                            warrant or guarantee that:
+                        </p>
+
+                        <ul>
+
+                            <li>The Platform will operate without interruption.</li>
+
+                            <li>The Platform will always be available.</li>
+
+                            <li>The Platform will be free from errors or defects.</li>
+
+                            <li>All defects will be corrected immediately.</li>
+
+                            <li>The Platform will meet every user's individual requirements.</li>
+
+                            <li>The Platform will be compatible with every device, browser, or operating system.</li>
+
+                            <li>Data entered by users will always be accurate or complete.</li>
+
+                            <li>The Platform will be free from viruses, malware, or other harmful components despite
+                                reasonable security measures.</li>
+
+                        </ul>
+
+                        <p>
+                            Users acknowledge that internet connectivity, cloud infrastructure, payment networks, and
+                            third-party services may affect Platform availability and performance.
+                        </p>
+
+                        <hr>
+
+                        <h3>20. Limitation of Liability</h3>
+
+                        <p>
+                            To the maximum extent permitted by applicable law, SOSAiTi, its directors, employees,
+                            affiliates, licensors, contractors, and service providers shall not be liable for any
+                            indirect, incidental, consequential, exemplary, special, or punitive damages arising from or
+                            relating to:
+                        </p>
+
+                        <ul>
+
+                            <li>Loss of profits.</li>
+
+                            <li>Loss of revenue.</li>
+
+                            <li>Loss of business opportunities.</li>
+
+                            <li>Loss of goodwill.</li>
+
+                            <li>Loss of data.</li>
+
+                            <li>Corrupted records.</li>
+
+                            <li>Business interruption.</li>
+
+                            <li>Unauthorized access caused by compromised user credentials.</li>
+
+                            <li>Internet outages.</li>
+
+                            <li>Banking or payment gateway failures.</li>
+
+                            <li>Actions taken by housing societies or committee members.</li>
+
+                            <li>Incorrect information entered by users.</li>
+
+                        </ul>
+
+                        <p>
+                            SOSAiTi serves as a software platform only. We are not a party to disputes between
+                            residents, housing societies, committee members, vendors, contractors, or any other third
+                            parties.
+                        </p>
+
+                        <p>
+                            Where liability cannot be excluded under applicable law, our total liability shall not
+                            exceed the amount paid by the affected customer to SOSAiTi for the services during the
+                            twelve (12) months immediately preceding the event giving rise to the claim.
+                        </p>
+
+                        <hr>
+
+                        <h3>21. Indemnification</h3>
+
+                        <p>
+                            You agree to defend, indemnify, and hold harmless SOSAiTi, its directors, employees,
+                            affiliates, licensors, contractors, and partners from and against any claims, liabilities,
+                            losses, damages, costs, expenses, or legal fees arising from:
+                        </p>
+
+                        <ul>
+
+                            <li>Your use of the Platform.</li>
+
+                            <li>Your violation of these Terms.</li>
+
+                            <li>Your violation of applicable laws or regulations.</li>
+
+                            <li>Content uploaded by you.</li>
+
+                            <li>Your infringement of another person's intellectual property or privacy rights.</li>
+
+                            <li>Your negligence or misconduct.</li>
+
+                        </ul>
+
+                        <hr>
+
+                        <h3>22. Force Majeure</h3>
+
+                        <p>
+                            SOSAiTi shall not be liable for any delay, interruption, or failure to perform its
+                            obligations due to events beyond its reasonable control, including but not limited to:
+                        </p>
+
+                        <ul>
+
+                            <li>Natural disasters.</li>
+
+                            <li>Floods.</li>
+
+                            <li>Earthquakes.</li>
+
+                            <li>Fire.</li>
+
+                            <li>Pandemics.</li>
+
+                            <li>Government actions.</li>
+
+                            <li>War or civil unrest.</li>
+
+                            <li>Power failures.</li>
+
+                            <li>Internet outages.</li>
+
+                            <li>Cyber attacks.</li>
+
+                            <li>Telecommunication failures.</li>
+
+                            <li>Failures of third-party service providers.</li>
+
+                        </ul>
+
+                        <hr>
+
+                        <h3>23. Governing Law</h3>
+
+                        <p>
+                            These Terms shall be governed by and interpreted in accordance with the laws of India,
+                            without regard to its conflict of law principles.
+                        </p>
+
+                        <p>
+                            Users agree that all matters relating to these Terms shall be subject to the applicable laws
+                            and regulations of India.
+                        </p>
+
+                        <hr>
+
+                        <h3>24. Dispute Resolution</h3>
+
+                        <p>
+                            We encourage users to contact SOSAiTi first to resolve any concerns or disputes informally.
+                        </p>
+
+                        <p>
+                            If a dispute cannot be resolved through good-faith discussions, it shall be subject to the
+                            exclusive jurisdiction of the competent courts located in the jurisdiction where SOSAiTi is
+                            registered, unless otherwise required by applicable law.
+                        </p>
+
+                        <p>
+                            Nothing in these Terms limits either party's right to seek urgent injunctive or equitable
+                            relief where appropriate.
+                        </p>
+
+                        <hr>
+
+                        <h3>25. Privacy</h3>
+
+                        <p>
+                            Your use of the Platform is also governed by our Privacy Policy, which explains how we
+                            collect, use, store, and protect personal information. By using the Platform, you
+                            acknowledge that you have read and understood our Privacy Policy.
+                        </p>
+
+                        <hr>
+
+                        <h3>26. Changes to These Terms</h3>
+
+                        <p>
+                            SOSAiTi may update or modify these Terms from time to time to reflect changes in our
+                            services, legal obligations, security requirements, or business operations.
+                        </p>
+
+                        <p>
+                            The revised Terms become effective upon publication on the Platform unless a different
+                            effective date is specified.
+                        </p>
+
+                        <p>
+                            Continued use of the Platform after updated Terms are published constitutes acceptance of
+                            the revised Terms.
+                        </p>
+
+                        <hr>
+
+                        <h3>27. Severability</h3>
+
+                        <p>
+                            If any provision of these Terms is determined by a court of competent jurisdiction to be
+                            unlawful, invalid, or unenforceable, that provision shall be enforced to the maximum extent
+                            permitted by law, and the remaining provisions shall continue in full force and effect.
+                        </p>
+
+                        <hr>
+
+                        <h3>28. Waiver</h3>
+
+                        <p>
+                            Failure by SOSAiTi to enforce any provision of these Terms shall not constitute a waiver of
+                            that provision or any other rights available under these Terms.
+                        </p>
+
+                        <hr>
+
+                        <h3>29. Entire Agreement</h3>
+
+                        <p>
+                            These Terms &amp; Conditions, together with our Privacy Policy and any additional policies
+                            or guidelines referenced on the Platform, constitute the entire agreement between you and
+                            SOSAiTi regarding your use of the Platform and supersede all prior understandings,
+                            communications, or agreements relating to the subject matter.
+                        </p>
+
+                        <hr>
+
+                        <h3>30. Contact Information</h3>
+
+                        <p>
+                            If you have any questions regarding these Terms &amp; Conditions, please contact us using
+                            the information below:
+                        </p>
+
+                        <p>
+
+                            <strong>SOSAiTi</strong><br>
+
+                            Email: support@sosaiti.com<br>
+
+                            Website: https://www.sosaiti.com<br>
+
+                            Support Hours: Monday to Friday, 9:00 AM – 6:00 PM (IST)
+
+                        </p>
+
+                        <hr>
+
+                        <p>
+                            By accessing or using the SOSAiTi Platform, you acknowledge that you have read, understood,
+                            and agree to be bound by these Terms &amp; Conditions.
+                        </p>
+                    </section><!--==========================
+                        TERMS OF USE
+                    ===========================-->
+                    <section id="use" class="legal-document">
+                        <div class="document-header"><span>
+                                Legal Document
+                            </span>
+                            <h2>
+                                Terms of Use
+                            </h2>
+                            <p class="updated">
+                                Last Updated: July 2026
+                            </p>
+                        </div>
+                        <h3>1. Acceptance of these Terms of Use</h3>
+
+                        <p>
+                            These Terms of Use govern your access to and use of the SOSAiTi website, web dashboard, and
+                            mobile application (collectively referred to as the "Platform"). By accessing or using the
+                            Platform, you agree to comply with these Terms of Use. If you do not agree with any part of
+                            these Terms, you must discontinue use of the Platform immediately.
+                        </p>
+
+                        <hr>
+
+                        <h3>2. Purpose of the Platform</h3>
+
+                        <p>
+                            SOSAiTi is a software platform designed to assist housing societies, apartment complexes,
+                            and residential communities with day-to-day administrative operations.
+                        </p>
+
+                        <p>The Platform includes features such as:</p>
+
+                        <ul>
+                            <li>Maintenance billing and tracking</li>
+                            <li>Online maintenance payments</li>
+                            <li>Resident management</li>
+                            <li>Income and expense management</li>
+                            <li>Financial reporting</li>
+                            <li>Notice management</li>
+                            <li>Complaint management</li>
+                            <li>Digital receipt generation</li>
+                        </ul>
+
+                        <p>
+                            The Platform is intended solely as a management tool and does not replace professional
+                            accounting, legal, tax, or financial advice.
+                        </p>
+
+                        <hr>
+
+                        <h3>3. Authorized Users</h3>
+
+                        <p>The Platform may be used only by:</p>
+
+                        <ul>
+                            <li>Registered housing societies</li>
+                            <li>Society administrators</li>
+                            <li>Committee members</li>
+                            <li>Property owners</li>
+                            <li>Residents</li>
+                            <li>Authorized tenants</li>
+                            <li>Users approved by a registered society</li>
+                        </ul>
+
+                        <p>
+                            Users may only access information and features for which they have been granted permission.
+                        </p>
+
+                        <hr>
+
+                        <h3>4. User Accounts</h3>
+
+                        <p>
+                            Certain features require a registered account.
+                        </p>
+
+                        <p>You agree to:</p>
+
+                        <ul>
+                            <li>Provide accurate registration information.</li>
+                            <li>Keep your profile updated.</li>
+                            <li>Protect your password.</li>
+                            <li>Use only your own account.</li>
+                            <li>Notify us immediately of unauthorized access.</li>
+                        </ul>
+
+                        <p>
+                            You are responsible for all activity performed using your account.
+                        </p>
+
+                        <hr>
+
+                        <h3>5. Acceptable Use</h3>
+
+                        <p>
+                            You agree to use the Platform responsibly and only for lawful purposes.
+                        </p>
+
+                        <p>You may:</p>
+
+                        <ul>
+                            <li>View maintenance bills.</li>
+                            <li>Pay society dues.</li>
+                            <li>Download receipts.</li>
+                            <li>View notices.</li>
+                            <li>Submit complaints.</li>
+                            <li>Access reports that you are authorized to view.</li>
+                        </ul>
+
+                        <hr>
+
+                        <h3>6. Prohibited Activities</h3>
+
+                        <p>You must not:</p>
+
+                        <ul>
+
+                            <li>Attempt unauthorized access to another user's account.</li>
+
+                            <li>Modify or manipulate financial records without authorization.</li>
+
+                            <li>Submit false complaints.</li>
+
+                            <li>Upload harmful software.</li>
+
+                            <li>Interfere with Platform security.</li>
+
+                            <li>Reverse engineer the Platform.</li>
+
+                            <li>Copy source code.</li>
+
+                            <li>Use bots or automated scripts.</li>
+
+                            <li>Upload illegal, defamatory, or offensive content.</li>
+
+                            <li>Impersonate another individual.</li>
+
+                            <li>Misuse administrator privileges.</li>
+
+                            <li>Use the Platform for unlawful activities.</li>
+
+                        </ul>
+
+                        <hr>
+
+                        <h3>7. Society Data</h3>
+
+                        <p>
+                            Each housing society is responsible for the accuracy of information entered into the
+                            Platform, including:
+                        </p>
+
+                        <ul>
+
+                            <li>Resident details</li>
+
+                            <li>Maintenance amounts</li>
+
+                            <li>Income records</li>
+
+                            <li>Expense records</li>
+
+                            <li>Financial reports</li>
+
+                            <li>Society notices</li>
+
+                            <li>Complaint resolutions</li>
+
+                        </ul>
+
+                        <p>
+                            SOSAiTi does not verify the accuracy of information entered by society administrators.
+                        </p>
+
+                        <hr>
+
+                        <h3>8. Online Payments</h3>
+
+                        <p>
+                            Maintenance payments are processed using third-party payment providers.
+                        </p>
+
+                        <p>
+                            Users acknowledge that:
+                        </p>
+
+                        <ul>
+
+                            <li>Payment processing is handled by external providers.</li>
+
+                            <li>Bank processing times may vary.</li>
+
+                            <li>SOSAiTi does not store debit or credit card details.</li>
+
+                            <li>Payment failures may occur due to banking or network issues.</li>
+
+                        </ul>
+
+                        <hr>
+
+                        <h3>9. Notices and Complaints</h3>
+
+                        <p>
+                            Residents may use the Platform to receive official society notices and submit
+                            maintenance-related complaints.
+                        </p>
+
+                        <p>
+                            Users agree that complaints should:
+                        </p>
+
+                        <ul>
+
+                            <li>Be truthful.</li>
+
+                            <li>Be respectful.</li>
+
+                            <li>Relate to genuine society matters.</li>
+
+                            <li>Not contain abusive or offensive language.</li>
+
+                            <li>Not violate applicable laws.</li>
+
+                        </ul>
+
+                        <p>
+                            Society administrators remain responsible for reviewing and resolving complaints.
+                        </p>
+
+                        <hr>
+
+                        <h3>10. Availability</h3>
+
+                        <p>
+                            We strive to maintain continuous availability of the Platform. However, temporary
+                            interruptions may occur due to:
+                        </p>
+
+                        <ul>
+
+                            <li>Maintenance.</li>
+
+                            <li>Security updates.</li>
+
+                            <li>Server upgrades.</li>
+
+                            <li>Internet failures.</li>
+
+                            <li>Third-party service outages.</li>
+
+                            <li>Events beyond our reasonable control.</li>
+
+                        </ul>
+
+                        <p>
+                            We do not guarantee uninterrupted access at all times.
+                        </p>
+
+                        <hr>
+
+                        <h3>11. Intellectual Property</h3>
+
+                        <p>
+                            All software, logos, graphics, interfaces, documentation, and other Platform content are
+                            owned by or licensed to SOSAiTi and are protected under applicable intellectual property
+                            laws.
+                        </p>
+
+                        <p>You may not:</p>
+
+                        <ul>
+
+                            <li>Copy the Platform.</li>
+
+                            <li>Redistribute the software.</li>
+
+                            <li>Sell or sublicense any part of the Platform.</li>
+
+                            <li>Remove copyright notices.</li>
+
+                            <li>Create derivative works.</li>
+
+                        </ul>
+
+                        <hr>
+
+                        <h3>12. Suspension of Access</h3>
+
+                        <p>
+                            We may suspend or terminate access where a user:
+                        </p>
+
+                        <ul>
+
+                            <li>Violates these Terms of Use.</li>
+
+                            <li>Attempts unauthorized access.</li>
+
+                            <li>Uses the Platform illegally.</li>
+
+                            <li>Compromises Platform security.</li>
+
+                            <li>Abuses other users.</li>
+
+                            <li>Misuses administrative privileges.</li>
+
+                        </ul>
+
+                        <hr>
+
+                        <h3>13. Limitation of Responsibility</h3>
+
+                        <p>
+                            SOSAiTi provides software tools only. We are not responsible for:
+                        </p>
+
+                        <ul>
+
+                            <li>Maintenance fee disputes.</li>
+
+                            <li>Incorrect financial records entered by societies.</li>
+
+                            <li>Society decisions.</li>
+
+                            <li>Resident disputes.</li>
+
+                            <li>Payment gateway failures.</li>
+
+                            <li>Internet outages.</li>
+
+                            <li>Losses caused by unauthorized account access resulting from compromised user
+                                credentials.</li>
+
+                        </ul>
+
+                        <hr>
+
+                        <h3>14. Changes to the Platform</h3>
+
+                        <p>
+                            We may improve, modify, replace, or discontinue features of the Platform at any time to
+                            enhance security, performance, compliance, or functionality.
+                        </p>
+
+                        <hr>
+
+                        <h3>15. Changes to these Terms of Use</h3>
+
+                        <p>
+                            These Terms of Use may be updated periodically. Continued use of the Platform after updated
+                            Terms are published constitutes acceptance of the revised Terms.
+                        </p>
+
+                        <hr>
+
+                        <h3>16. Governing Law</h3>
+
+                        <p>
+                            These Terms of Use shall be governed by the laws of India. Any disputes shall be subject to
+                            the jurisdiction of the competent courts where SOSAiTi is registered, unless otherwise
+                            required by applicable law.
+                        </p>
+
+                        <hr>
+
+                        <h3>17. Contact Us</h3>
+
+                        <p>
+                            For questions regarding these Terms of Use, please contact:
+                        </p>
+
+                        <p>
+
+                            <strong>SOSAiTi</strong><br>
+
+                            Email: support@sosaiti.com<br>
+
+                            Website: https://www.sosaiti.com
+
+                        </p>
+
+                        <hr>
+
+                        <p>
+                            By using the SOSAiTi Platform, you acknowledge that you have read, understood, and agree to
+                            comply with these Terms of Use.
+                        </p>
+                    </section><!--==========================
+                        REFUND POLICY
+                    ===========================-->
+                    <!-- <section id="refund" class="legal-document">
+                        <div class="document-header"><span>
+                                Legal Document
+                            </span>
+                            <h2>
+                                Refund & Cancellation Policy
+                            </h2>
+                            <p class="updated">
+                                Last Updated: July 2026
+                            </p>
+                        </div> -->
+                    <!-- Paste the complete Refund Policy here -->
+                    </section><!--==========================
+                        COOKIE POLICY
+                    ===========================-->
+                    <section id="cookies" class="legal-document">
+                        <div class="document-header"><span>
+                                Legal Document
+                            </span>
+                            <h2>
+                                Cookie Policy
+                            </h2>
+                            <p class="updated">
+                                Last Updated: July 2026
+                            </p>
+                        </div>
+                        <h3>1. Introduction</h3>
+
+                        <p>
+                            This Cookie Policy explains how SOSAiTi ("Company", "we", "our", or "us") uses cookies and
+                            similar technologies when you visit our website, web dashboard, and mobile application
+                            (collectively, the "Platform").
+                        </p>
+
+                        <p>
+                            This Cookie Policy should be read together with our Privacy Policy. By continuing to use the
+                            Platform, you consent to our use of cookies as described in this Policy, unless you disable
+                            them through your browser or device settings.
+                        </p>
+
+                        <hr>
+
+                        <h3>2. What Are Cookies?</h3>
+
+                        <p>
+                            Cookies are small text files that are stored on your computer, smartphone, or other device
+                            when you visit a website or use certain online services. Cookies help websites remember
+                            information about your visit and improve your browsing experience.
+                        </p>
+
+                        <p>
+                            Some cookies are deleted when you close your browser, while others remain on your device for
+                            a specified period or until manually deleted.
+                        </p>
+
+                        <hr>
+
+                        <h3>3. Why We Use Cookies</h3>
+
+                        <p>
+                            We use cookies and similar technologies to provide a secure, reliable, and user-friendly
+                            experience.
+                        </p>
+
+                        <p>Cookies help us to:</p>
+
+                        <ul>
+
+                            <li>Keep you signed in to your account.</li>
+
+                            <li>Remember your preferences and settings.</li>
+
+                            <li>Improve website performance.</li>
+
+                            <li>Protect user accounts from unauthorized access.</li>
+
+                            <li>Understand how visitors use the Platform.</li>
+
+                            <li>Identify and resolve technical issues.</li>
+
+                            <li>Improve overall user experience.</li>
+
+                        </ul>
+
+                        <hr>
+
+                        <h3>4. Types of Cookies We Use</h3>
+
+                        <h4>4.1 Essential Cookies</h4>
+
+                        <p>
+                            These cookies are necessary for the Platform to function correctly and cannot generally be
+                            disabled.
+                        </p>
+
+                        <p>Examples include:</p>
+
+                        <ul>
+
+                            <li>User authentication.</li>
+
+                            <li>Session management.</li>
+
+                            <li>Security verification.</li>
+
+                            <li>Load balancing.</li>
+
+                            <li>Fraud prevention.</li>
+
+                        </ul>
+
+                        <hr>
+
+                        <h4>4.2 Functional Cookies</h4>
+
+                        <p>
+                            These cookies remember your preferences to provide a more personalized experience.
+                        </p>
+
+                        <p>Examples include:</p>
+
+                        <ul>
+
+                            <li>Language preference.</li>
+
+                            <li>Theme preference.</li>
+
+                            <li>Remembering login sessions.</li>
+
+                            <li>User interface settings.</li>
+
+                        </ul>
+
+                        <hr>
+
+                        <h4>4.3 Analytics Cookies</h4>
+
+                        <p>
+                            Analytics cookies help us understand how users interact with the Platform so we can improve
+                            performance and usability.
+                        </p>
+
+                        <p>Examples include:</p>
+
+                        <ul>
+
+                            <li>Pages visited.</li>
+
+                            <li>Session duration.</li>
+
+                            <li>Navigation patterns.</li>
+
+                            <li>Error tracking.</li>
+
+                            <li>Anonymous usage statistics.</li>
+
+                        </ul>
+
+                        <p>
+                            Analytics data is generally collected in an aggregated or anonymized form where reasonably
+                            possible.
+                        </p>
+
+                        <hr>
+
+                        <h4>4.4 Performance Cookies</h4>
+
+                        <p>
+                            Performance cookies help us monitor system performance and optimize the speed and
+                            reliability of our Platform.
+                        </p>
+
+                        <p>These cookies may be used to:</p>
+
+                        <ul>
+
+                            <li>Reduce page loading times.</li>
+
+                            <li>Optimize server performance.</li>
+
+                            <li>Monitor application responsiveness.</li>
+
+                            <li>Detect performance bottlenecks.</li>
+
+                        </ul>
+
+                        <hr>
+
+                        <h3>5. Third-Party Cookies</h3>
+
+                        <p>
+                            Certain third-party services integrated with the Platform may place their own cookies on
+                            your device.
+                        </p>
+
+                        <p>Examples include:</p>
+
+                        <ul>
+
+                            <li>Payment gateway providers.</li>
+
+                            <li>Analytics providers.</li>
+
+                            <li>Cloud hosting services.</li>
+
+                            <li>Authentication providers.</li>
+
+                            <li>Customer support services.</li>
+
+                        </ul>
+
+                        <p>
+                            These third parties maintain their own privacy and cookie policies. SOSAiTi does not
+                            control third-party cookies.
+                        </p>
+
+                        <hr>
+
+                        <h3>6. Mobile Applications</h3>
+
+                        <p>
+                            Our mobile application may use technologies similar to cookies, such as secure local
+                            storage, device identifiers, or authentication tokens, to maintain user sessions and improve
+                            application performance.
+                        </p>
+
+                        <p>
+                            These technologies do not collect more information than is reasonably necessary to provide
+                            the requested services.
+                        </p>
+
+                        <hr>
+
+                        <h3>7. Managing Cookies</h3>
+
+                        <p>
+                            Most web browsers allow you to manage or disable cookies through browser settings.
+                        </p>
+
+                        <p>You may:</p>
+
+                        <ul>
+
+                            <li>Delete existing cookies.</li>
+
+                            <li>Block all cookies.</li>
+
+                            <li>Block specific cookies.</li>
+
+                            <li>Receive notifications before cookies are stored.</li>
+
+                            <li>Automatically delete cookies when closing your browser.</li>
+
+                        </ul>
+
+                        <p>
+                            Please note that disabling essential cookies may affect the availability or functionality of
+                            certain features of the Platform.
+                        </p>
+
+                        <hr>
+
+                        <h3>8. Data Collected Through Cookies</h3>
+
+                        <p>
+                            Depending on the type of cookie used, we may collect information such as:
+                        </p>
+
+                        <ul>
+
+                            <li>Browser type.</li>
+
+                            <li>Device type.</li>
+
+                            <li>Operating system.</li>
+
+                            <li>IP address.</li>
+
+                            <li>Session identifiers.</li>
+
+                            <li>Login status.</li>
+
+                            <li>Website preferences.</li>
+
+                            <li>Pages visited.</li>
+
+                            <li>Time spent on the Platform.</li>
+
+                        </ul>
+
+                        <p>
+                            We do not use cookies to collect sensitive financial information such as debit card numbers,
+                            credit card numbers, CVV numbers, UPI PINs, or banking passwords.
+                        </p>
+
+                        <hr>
+
+                        <h3>9. Data Retention</h3>
+
+                        <p>
+                            Cookies may remain on your device for different periods depending on their purpose.
+                        </p>
+
+                        <ul>
+
+                            <li>Session cookies are deleted automatically when your browser is closed.</li>
+
+                            <li>Persistent cookies remain until they expire or are manually deleted.</li>
+
+                            <li>Authentication cookies are retained only for the period necessary to maintain secure
+                                access.</li>
+
+                        </ul>
+
+                        <hr>
+
+                        <h3>10. Updates to this Cookie Policy</h3>
+
+                        <p>
+                            We may update this Cookie Policy from time to time to reflect changes in technology, legal
+                            requirements, or our services.
+                        </p>
+
+                        <p>
+                            The latest version will always be available on the Platform with the revised effective date.
+                        </p>
+
+                        <hr>
+
+                        <h3>11. Contact Us</h3>
+
+                        <p>
+                            If you have any questions regarding this Cookie Policy or our use of cookies, please contact
+                            us:
+                        </p>
+
+                        <p>
+
+                            <strong>SOSAiTi</strong><br>
+
+                            Email: support@sosaiti.com<br>
+
+                            Website: https://www.sosaiti.com
+
+                        </p>
+
+                        <hr>
+
+                        <p>
+                            By continuing to use the SOSAiTi Platform, you acknowledge that you have read and
+                            understood this Cookie Policy.
+                        </p>
+                    </section><!--==========================
+                        DISCLAIMER
+                    ===========================-->
+                    <section id="disclaimer" class="legal-document">
+                        <div class="document-header"><span>
+                                Legal Document
+                            </span>
+                            <h2>
+                                Disclaimer
+                            </h2>
+                            <p class="updated">
+                                Last Updated: July 2026
+                            </p>
+                        </div>
+                        <h3>1. General Disclaimer</h3>
+
+                        <p>
+                            The information, software, services, reports, and other content provided through the SOS
+                            AiTi website, web dashboard, and mobile application (collectively, the "Platform") are
+                            provided for general information and society management purposes only.
+                        </p>
+
+                        <p>
+                            While we strive to provide accurate, reliable, and up-to-date services, SOSAiTi makes no
+                            representations or warranties, express or implied, regarding the completeness, accuracy,
+                            reliability, availability, or suitability of the Platform or any information contained
+                            within it.
+                        </p>
+
+                        <p>
+                            Your use of the Platform is entirely at your own risk.
+                        </p>
+
+                        <hr>
+
+                        <h3>2. Software Platform Only</h3>
+
+                        <p>
+                            SOSAiTi is a software provider that offers digital tools for housing society management.
+                        </p>
+
+                        <p>
+                            We do not own, manage, supervise, or control any housing society using the Platform.
+                        </p>
+
+                        <p>
+                            All administrative decisions, maintenance charges, notices, complaint resolutions, financial
+                            records, and society operations are the sole responsibility of the respective housing
+                            society and its authorized administrators.
+                        </p>
+
+                        <hr>
+
+                        <h3>3. No Professional Advice</h3>
+
+                        <p>
+                            The Platform is not intended to provide legal, accounting, taxation, auditing, financial, or
+                            professional advice.
+                        </p>
+
+                        <p>
+                            Users should consult qualified professionals before making decisions relating to accounting,
+                            taxation, legal compliance, financial reporting, or regulatory matters.
+                        </p>
+
+                        <hr>
+
+                        <h3>4. Financial Information Disclaimer</h3>
+
+                        <p>
+                            Financial reports, maintenance records, income statements, expense reports, receipts, and
+                            other financial information displayed by the Platform are generated using information
+                            entered by authorized society administrators and recorded transactions.
+                        </p>
+
+                        <p>
+                            SOSAiTi does not independently verify, audit, or certify the accuracy of financial
+                            information entered by users.
+                        </p>
+
+                        <p>
+                            Housing societies remain solely responsible for maintaining accurate accounting records and
+                            complying with applicable financial and tax laws.
+                        </p>
+
+                        <hr>
+
+                        <h3>5. Payment Disclaimer</h3>
+
+                        <p>
+                            Online maintenance payments are processed through independent third-party payment service
+                            providers.
+                        </p>
+
+                        <p>
+                            SOSAiTi does not control:
+                        </p>
+
+                        <ul>
+
+                            <li>Bank processing times.</li>
+
+                            <li>UPI services.</li>
+
+                            <li>Payment gateway availability.</li>
+
+                            <li>Transaction approval decisions.</li>
+
+                            <li>Banking network failures.</li>
+
+                            <li>Refund processing timelines managed by payment providers.</li>
+
+                        </ul>
+
+                        <p>
+                            We are not responsible for payment failures, delays, duplicate transactions, or banking
+                            errors caused by third-party financial institutions or payment processors.
+                        </p>
+
+                        <hr>
+
+                        <h3>6. Society Content</h3>
+
+                        <p>
+                            Notices, announcements, complaints, documents, maintenance bills, financial records,
+                            resident information, and other content displayed within the Platform are created and
+                            managed by authorized users of each housing society.
+                        </p>
+
+                        <p>
+                            SOSAiTi does not routinely review, verify, endorse, or guarantee the accuracy, legality,
+                            completeness, or appropriateness of such content.
+                        </p>
+
+                        <hr>
+
+                        <h3>7. Resident Disputes</h3>
+
+                        <p>
+                            SOSAiTi is not responsible for disputes between:
+                        </p>
+
+                        <ul>
+
+                            <li>Residents.</li>
+
+                            <li>Property owners.</li>
+
+                            <li>Tenants.</li>
+
+                            <li>Committee members.</li>
+
+                            <li>Housing societies.</li>
+
+                            <li>Contractors.</li>
+
+                            <li>Vendors.</li>
+
+                        </ul>
+
+                        <p>
+                            Any disputes relating to maintenance charges, society decisions, complaints, penalties, or
+                            other community matters must be resolved directly with the respective housing society or
+                            through appropriate legal channels.
+                        </p>
+
+                        <hr>
+
+                        <h3>8. Availability of Services</h3>
+
+                        <p>
+                            Although we strive to provide uninterrupted services, we do not guarantee that the Platform
+                            will always be available or operate without interruption.
+                        </p>
+
+                        <p>
+                            Service interruptions may occur due to:
+                        </p>
+
+                        <ul>
+
+                            <li>Scheduled maintenance.</li>
+
+                            <li>Software updates.</li>
+
+                            <li>Internet outages.</li>
+
+                            <li>Power failures.</li>
+
+                            <li>Cloud infrastructure issues.</li>
+
+                            <li>Cybersecurity incidents.</li>
+
+                            <li>Third-party service failures.</li>
+
+                            <li>Events beyond our reasonable control.</li>
+
+                        </ul>
+
+                        <hr>
+
+                        <h3>9. Third-Party Services</h3>
+
+                        <p>
+                            The Platform may integrate with third-party services including payment gateways, cloud
+                            hosting providers, authentication providers, SMS services, email providers, and analytics
+                            services.
+                        </p>
+
+                        <p>
+                            SOSAiTi does not control or guarantee the availability, performance, or security of
+                            third-party services and is not responsible for any loss or damage arising from their use.
+                        </p>
+
+                        <hr>
+
+                        <h3>10. External Links</h3>
+
+                        <p>
+                            Our Platform may contain links to third-party websites for user convenience.
+                        </p>
+
+                        <p>
+                            These websites operate independently of SOSAiTi, and we do not endorse or assume
+                            responsibility for their content, privacy practices, products, or services.
+                        </p>
+
+                        <p>
+                            Users access third-party websites at their own risk.
+                        </p>
+
+                        <hr>
+
+                        <h3>11. Security Disclaimer</h3>
+
+                        <p>
+                            We implement reasonable administrative, technical, and organizational safeguards to protect
+                            user information.
+                        </p>
+
+                        <p>
+                            However, no internet transmission, electronic storage system, or software platform can be
+                            guaranteed to be completely secure.
+                        </p>
+
+                        <p>
+                            Users are responsible for protecting their account credentials and using secure devices when
+                            accessing the Platform.
+                        </p>
+
+                        <hr>
+
+                        <h3>12. Limitation of Liability</h3>
+
+                        <p>
+                            To the fullest extent permitted by applicable law, SOSAiTi shall not be liable for any
+                            direct, indirect, incidental, consequential, special, exemplary, or punitive damages arising
+                            out of or relating to:
+                        </p>
+
+                        <ul>
+
+                            <li>Use or inability to use the Platform.</li>
+
+                            <li>Incorrect society information.</li>
+
+                            <li>Maintenance fee disputes.</li>
+
+                            <li>Payment gateway failures.</li>
+
+                            <li>Loss of data.</li>
+
+                            <li>Business interruption.</li>
+
+                            <li>Loss of profits.</li>
+
+                            <li>Unauthorized access resulting from compromised user credentials.</li>
+
+                            <li>Third-party service interruptions.</li>
+
+                            <li>Errors made by society administrators.</li>
+
+                        </ul>
+
+                        <hr>
+
+                        <h3>13. Changes to this Disclaimer</h3>
+
+                        <p>
+                            SOSAiTi may update this Disclaimer from time to time to reflect changes in applicable laws,
+                            services, technology, or business practices.
+                        </p>
+
+                        <p>
+                            The updated version will become effective upon publication on the Platform unless otherwise
+                            stated.
+                        </p>
+
+                        <hr>
+
+                        <h3>14. Contact Us</h3>
+
+                        <p>
+                            If you have any questions regarding this Disclaimer, please contact us:
+                        </p>
+
+                        <p>
+
+                            <strong>SOSAiTi</strong><br>
+
+                            Email: support@sosaiti.com<br>
+
+                            Website: https://www.sosaiti.com
+
+                        </p>
+
+                        <hr>
+
+                        <p>
+                            By accessing or using the SOSAiTi Platform, you acknowledge that you have read, understood,
+                            and agree to this Disclaimer.
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main><!--========================================
+        CONTACT
+    =========================================-->
+    <section class="legal-contact">
+        <div class="container">
+            <div class="contact-card">
+                <h2>
+                    Questions About Our Policies?
+                </h2>
+                <p>
+                    If you have any questions regarding our legal documents,
+                    privacy practices, billing policies, or the use of the
+                    SOSAiTi platform, please contact our support team.
+                </p>
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <h4>Email</h4>
+                        <p>
+                            support@sosaiti.com
+                        </p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Website</h4>
+                        <p>
+                            www.sosaiti.com
+                        </p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Business Hours</h4>
+                        <p>
+                            Monday – Friday<br>
+                            9:00 AM – 6:00 PM
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!--========================================
+        SCROLL TO TOP
+    =========================================--><button id="scrollTop" class="scroll-top"
+        aria-label="Scroll to top">↑</button>
+
+
+    <!-- Footer Section    S T A R T -->
+    <footer class="footer-section fix position-relative bg-cover"
+        style="background-image: url('assets/images/footer-bg-2.jpg');">
+        <div class="container">
+            <div class="footer-wrapper-new-3">
+                <div class="footer-wrap-area">
+                    <a href="index.html" class="footer-logo wow fadeInUp" data-wow-delay=".3s">
+                        <img src="assets/images/logo/white-logo.svg" alt="img">
+                    </a>
+                    <ul class="footer-list wow fadeInUp" data-wow-delay=".5s">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="software.html">Software</a>
+                        </li>
+                        <li>
+                            <a href="mobile-app.html">Mobile App</a>
+                        </li>
+                        <li>
+                            <a href="about.html">About Us</a>
+                        </li>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="legal.html">Legal</a>
+                        </li>
+                    </ul>
+                    <div class="store-links wow fadeInUp" data-wow-delay=".7s">
+                        <div class="apple">
+                            <a href="#"><i class="fa-brands fa-apple"></i> App Store</a>
+                        </div>
+                        <div class="play">
+                            <a href="#"><i class="fa-brands fa-android"></i> Play Store</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="gt-footer-bottom-wrapper2">
+                <p class="wow fadeInUp" data-wow-delay=".3s">Copyright© <b>Sosaiti</b></p>
+                <ul class="social-links wow fadeInUp" data-wow-delay=".5s">
+                    <li> <a href="#"><i class="fa-brands fa-facebook-f"></i></a> </li>
+                    <li> <a href="#"><i class="fa-brands fa-youtube"></i></a> </li>
+                    <li> <a href="#"><i class="fa-brands fa-linkedin-in"></i></a> </li>
+                    <li> <a href="https://www.instagram.com/sosaiti.official/"><i class="fa-brands fa-instagram"></i></a> </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        /*==================================================
+    LEGAL CENTER
+    ==================================================*/
+
+        document.addEventListener("DOMContentLoaded", () => {
+
+            /*=========================================
+                ELEMENTS
+            =========================================*/
+
+            const filterButtons = document.querySelectorAll(".filter-btn");
+            const documents = document.querySelectorAll(".legal-document");
+            const sidebarLinks = document.querySelectorAll(".sidebar-card a");
+            const footerLinks = document.querySelectorAll(".footer-links a");
+            const scrollTopBtn = document.getElementById("scrollTop");
+
+            /*=========================================
+                SHOW DOCUMENT
+            =========================================*/
+
+            function showDocument(id) {
+                documents.forEach(doc => {
+                    doc.classList.remove("active-document");
+                });
+
+                filterButtons.forEach(btn => {
+                    btn.classList.remove("active");
+                });
+
+                const activeDocument = document.getElementById(id);
+
+                if (activeDocument) {
+                    activeDocument.classList.add("active-document");
+                }
+
+                const activeButton = document.querySelector(`.filter-btn[data-filter="${id}"]`);
+
+                if (activeButton) {
+                    activeButton.classList.add("active");
+                }
+
+                history.replaceState(null, "", "#" + id);
+
+                window.scrollTo({
+                    top: document.querySelector(".legal-page").offsetTop - 70,
+                    behavior: "smooth"
+                });
+
+            }
+
+            /*=========================================
+                FILTER BUTTONS
+            =========================================*/
+
+            filterButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                    const id = button.dataset.filter;
+                    showDocument(id);
+                });
+
+            });
+
+            /*=========================================
+                SIDEBAR LINKS
+            =========================================*/
+
+            sidebarLinks.forEach(link => {
+                link.addEventListener("click", e => {
+                    e.preventDefault();
+                    const id = link.getAttribute("href").replace("#", "");
+                    showDocument(id);
+                });
+
+            });
+
+
+            /*=========================================
+                HASH SUPPORT
+            =========================================*/
+
+            if (window.location.hash) {
+                const hash = window.location.hash.replace("#", "");
+                if (document.getElementById(hash)) {
+                    showDocument(hash);
+                }
+            }
+
+            /*=========================================
+                SCROLL TO TOP
+            =========================================*/
+
+            scrollTopBtn.addEventListener("click", () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                });
+            });
+
+            window.addEventListener("scroll", () => {
+                if (window.scrollY > 500) {
+                    scrollTopBtn.classList.add("show");
+                } else {
+                    scrollTopBtn.classList.remove("show");
+                }
+
+            });
+
+            /*=========================================
+                ACTIVE SIDEBAR LINK
+            =========================================*/
+
+            function updateSidebar(id) {
+                sidebarLinks.forEach(link => {
+                    link.classList.remove("active");
+                    if (link.getAttribute("href") === "#" + id) {
+                        link.classList.add("active");
+                    }
+                });
+            }
+
+            const originalShow = showDocument;
+
+            showDocument = function (id) {
+                originalShow(id);
+                updateSidebar(id);
+            };
+
+            /*=========================================
+                KEYBOARD SHORTCUTS
+            =========================================*/
+
+            document.addEventListener("keydown", e => {
+                if (e.key === "Home") {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: "smooth"
+                    });
+                }
+            });
+
+            /*=========================================
+                DEFAULT DOCUMENT
+            =========================================*/
+
+            if (!window.location.hash) {
+                showDocument("privacy");
+            }
+
+        });
+    </script>
+
+    <!--<< All JS Plugins >>-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!--<< Bootstrap Js >>-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--<< Waypoints Js >>-->
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <!--<< Counterup Js >>-->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!--<< Viewport Js >>-->
+    <script src="assets/js/viewport.jquery.js"></script>
+    <!--<< Tilt Js >>-->
+    <script src="assets/js/tilt.min.js"></script>
+    <!--<< Swiper Slider Js >>-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--<< MeanMenu Js >>-->
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <!--<< Magnific popup Js >>-->
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <!--<< Wow Animation Js >>-->
+    <script src="assets/js/wow.min.js"></script>
+    <!--<< NIce Select Js >>-->
+    <script src="assets/js/nice-select.min.js"></script>
+    <!--<< Main.js >>-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+
+</html>
