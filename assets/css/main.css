@@ -6094,7 +6094,7 @@ input.main-search-input::placeholder {
   align-items: center;
   gap: 10px;
   border-radius: 30px;
-  background: rgb(255, 255, 255);
+  background: rgb(255 255 255 / 30%);
   backdrop-filter: blur(2px);
   color: var(--theme);
   font-family: "Nunito", sans-serif;
@@ -7301,6 +7301,8 @@ input.main-search-input::placeholder {
 .advantage-wrapper.style1 .advantage-content .checklist-wrapper {
   margin-bottom: 30px;
 }
+
+
 
 .advantage-wrapper.style1 .advantage-thumb {
   position: relative;
@@ -12617,4 +12619,13 @@ Resident App Section
         transform: translateX(0);
     }
 
+}
+
+@media (max-width: 1199px) {
+  .checklist-wrapper.style1{
+    display:block;
+  }
+  .advantage-content{
+    text-align:center;
+  }
 }
