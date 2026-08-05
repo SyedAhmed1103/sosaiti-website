@@ -13880,15 +13880,22 @@ CORE VALUES
 /*==========================================
 LEADERSHIP SECTION
 ==========================================*/
+/*==================================================
+    Leadership Section
+==================================================*/
 
 .leadership-section{
+    padding:120px 0;
     background:#f8fbff;
     position:relative;
+    overflow:hidden;
 }
 
 .leadership-subtitle{
-    display:inline-block;
-    padding:10px 22px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    padding:12px 24px;
     border-radius:50px;
     background:#edf4ff;
     color:#4F7EFF;
@@ -13896,13 +13903,14 @@ LEADERSHIP SECTION
     font-weight:700;
     letter-spacing:1px;
     margin-bottom:20px;
+    text-transform:uppercase;
 }
 
 .leadership-section h2{
-    font-size:48px;
-    font-weight:700;
-    color:#111827;
-    margin-bottom:20px;
+    font-size:52px;
+    font-weight:800;
+    color:#101828;
+    margin-bottom:18px;
 }
 
 .leadership-section h2 span{
@@ -13912,134 +13920,356 @@ LEADERSHIP SECTION
 .leadership-section .section-title p{
     max-width:760px;
     margin:auto;
-    color:#6b7280;
-    line-height:1.9;
     font-size:17px;
+    color:#667085;
+    line-height:1.9;
 }
 
+/*==========================
+    Card
+==========================*/
+
 .leader-card{
-    background:#fff;
-    border-radius:24px;
+
+    position:relative;
     overflow:hidden;
-    border:1px solid #edf2f7;
-    transition:.35s;
+
+    background:#fff;
+
+    border-radius:26px;
+
+    box-shadow:
+    0 10px 35px rgba(15,23,42,.06);
+
+    transition:.45s;
+
     height:100%;
 }
 
 .leader-card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 20px 50px rgba(79,126,255,.12);
+
+    transform:translateY(-12px);
+
+    box-shadow:
+    0 25px 60px rgba(79,126,255,.16);
+
 }
+
+/*==========================
+    Header
+==========================*/
 
 .leader-image{
-    background:linear-gradient(135deg,#4F7EFF,#82A8FF);
-    text-align:center;
-    padding:40px 20px;
+
+    position:relative;
+
+    height:240px;
+
+    background:
+    linear-gradient(135deg,#4F7EFF 0%,#6E95FF 100%);
+
 }
+
+/*==========================
+    Founder Image
+==========================*/
 
 .leader-image img{
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:-85px;
+
+    transform:translateX(-50%);
+
     width:220px;
+
     height:220px;
+
     object-fit:cover;
+
     border-radius:50%;
-    border:6px solid #fff;
+
+
+    border:5px solid #fff;
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.18);
+
 }
 
+/*==========================
+    Content
+==========================*/
+
 .leader-content{
-    padding:35px;
+
+    padding:
+    30px
+    38px
+    40px;
+
     text-align:center;
+
 }
 
 .leader-content h3{
-    font-size:30px;
-    margin-bottom:8px;
-    font-weight:700;
+
+    font-size:32px;
+
+    font-weight:800;
+
+    color:#111827;
+
+    margin-bottom:10px;
+
 }
 
 .leader-content span{
+
     display:inline-block;
+
+    font-size:15px;
+
+    font-weight:700;
+
     color:#4F7EFF;
-    font-weight:600;
-    margin-bottom:20px;
+
+    margin-bottom:22px;
+
+    letter-spacing:.5px;
+
 }
 
 .leader-content p{
-    color:#6b7280;
+
+    font-size:16px;
+
     line-height:1.9;
-    margin-bottom:25px;
+
+    color:#6b7280;
+
+    margin-bottom:30px;
+
 }
 
+/*==========================
+    Social
+==========================*/
+
 .leader-social{
+
     display:flex;
+
     justify-content:center;
-    gap:15px;
+
+    gap:14px;
+
 }
 
 .leader-social a{
-    width:45px;
-    height:45px;
+
+    width:48px;
+
+    height:48px;
+
     border-radius:50%;
-    background:#edf4ff;
+
+    background:#f3f6ff;
+
     color:#4F7EFF;
+
     display:flex;
+
     align-items:center;
+
     justify-content:center;
-    transition:.3s;
+
+    transition:.35s;
+
+    font-size:18px;
+
 }
 
 .leader-social a:hover{
+
     background:#4F7EFF;
+
     color:#fff;
+
+    transform:translateY(-5px);
+
 }
 
+/*==========================
+    Quote
+==========================*/
+
 .leadership-quote{
-    max-width:900px;
-    margin:80px auto 0;
+
+    margin-top:90px;
+
+    padding:60px;
+
+    border-radius:30px;
+
+    background:
+    linear-gradient(135deg,#4F7EFF,#6E95FF);
+
     text-align:center;
-    padding:40px;
-    border-radius:24px;
-    background:#4F7EFF;
+
+    box-shadow:
+    0 20px 60px rgba(79,126,255,.18);
+
 }
 
 .leadership-quote h4{
+
     color:#fff;
-    font-size:28px;
-    line-height:1.6;
-    margin:0;
+
+    font-size:30px;
+
     font-weight:600;
+
+    line-height:1.7;
+
+    margin:0;
+
 }
+
+/*==========================
+    Responsive
+==========================*/
 
 @media(max-width:991px){
 
-    .leadership-section h2{
-        font-size:38px;
-    }
+.leadership-section{
+
+padding:90px 0;
+
+}
+
+.leadership-section h2{
+
+font-size:42px;
+
+}
+
+.leader-image{
+
+height:210px;
+
+}
+
+.leader-image img{
+
+width:190px;
+
+height:190px;
+
+bottom:-70px;
+
+}
+
+.leader-content{
+
+padding:100px 28px 35px;
+
+}
 
 }
 
 @media(max-width:767px){
 
-    .leadership-section h2{
-        font-size:30px;
-    }
+.leadership-section{
 
-    .leader-image img{
-        width:180px;
-        height:180px;
-    }
+padding:70px 0;
 
-    .leader-content{
-        padding:25px;
-    }
+}
 
-    .leadership-quote{
-        padding:25px;
-    }
+.leadership-section h2{
 
-    .leadership-quote h4{
-        font-size:20px;
-    }
+font-size:30px;
 
+}
+
+.leader-image{
+
+height:180px;
+
+}
+
+.leader-image img{
+
+width:150px;
+
+height:150px;
+
+bottom:-55px;
+
+}
+
+.leader-content{
+
+padding:85px 22px 28px;
+
+}
+
+.leader-content h3{
+
+font-size:26px;
+
+}
+
+.leader-content p{
+
+font-size:15px;
+
+}
+
+.leader-social a{
+
+width:42px;
+
+height:42px;
+
+}
+
+.leadership-quote{
+
+padding:35px 22px;
+
+margin-top:60px;
+
+}
+
+.leadership-quote h4{
+
+font-size:22px;
+
+}
+
+}
+
+.leader-image{
+    height:300px;
+    background:linear-gradient(135deg,#4F7EFF,#78A0FF);
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+    overflow:hidden;
+}
+
+.leader-image img{
+    width:350px;
+    height:auto;
+    max-height:400px;
+    object-fit:contain;
+    border:none;
+    border-radius:0;
+    box-shadow:none;
 }
 /*==========================================
 POWERED BY ITDAX
@@ -14176,5 +14406,436 @@ padding:30px 20px;
 font-size:30px;
 
 }
+
+}
+/* ===========================================================
+   SOFTWARE FEATURE SECTION
+=========================================================== */
+
+.software-feature-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.software-feature-content {
+    position: relative;
+    z-index: 2;
+}
+
+.software-feature-content .subtitle {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 18px;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--theme-color);
+    text-transform: uppercase;
+    letter-spacing: .8px;
+}
+
+.software-feature-content .subtitle img {
+    width: 18px;
+}
+
+.software-feature-content .title {
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: var(--header);
+    margin-bottom: 22px;
+}
+
+.software-feature-content p {
+    font-size: 17px;
+    line-height: 1.9;
+    color: #6b7280;
+    margin-bottom: 40px;
+}
+
+
+
+/* ===========================================================
+   FEATURE LIST
+=========================================================== */
+
+.software-feature-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+/* ===========================================================
+   FEATURE ITEM
+=========================================================== */
+
+.feature-item {
+
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+
+    background: #fff;
+
+    padding: 22px;
+
+    border-radius: 18px;
+
+    border: 1px solid #edf1f7;
+
+    transition: all .35s ease;
+
+}
+
+.feature-item:hover {
+
+    transform: translateY(-6px);
+
+    border-color: rgba(59,130,246,.15);
+
+    box-shadow: 0 18px 45px rgba(0,0,0,.08);
+
+}
+
+.feature-item .icon {
+
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 16px;
+
+    background: linear-gradient(135deg,#3b82f6,#2563eb);
+
+    color: #fff;
+
+    font-size: 22px;
+
+}
+
+.feature-item .content {
+
+    flex: 1;
+
+}
+
+.feature-item h4 {
+
+    margin-bottom: 10px;
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    color: var(--header);
+
+}
+
+.feature-item p {
+
+    margin: 0;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    color: #6f6f6f;
+
+}
+
+
+
+/* ===========================================================
+   IMAGE
+=========================================================== */
+
+.software-feature-image {
+
+    position: relative;
+
+    text-align: center;
+
+}
+
+.software-feature-image img {
+
+    width: 100%;
+
+    border-radius: 22px;
+
+    display: block;
+
+    border: 1px solid rgba(0,0,0,.06);
+
+    box-shadow: 0 30px 70px rgba(0,0,0,.10);
+
+    transition: all .4s ease;
+
+}
+
+.software-feature-image img:hover {
+
+    transform: translateY(-8px);
+
+}
+
+
+
+/* ===========================================================
+   SECTION SPACING
+=========================================================== */
+
+.software-feature-section.pt-0 {
+
+    padding-top: 0;
+
+}
+
+.software-feature-section+.software-feature-section {
+
+    margin-top: 20px;
+
+}
+
+/* ===========================================================
+   RESPONSIVE CSS
+=========================================================== */
+
+
+/* ===========================
+   Large Laptop
+=========================== */
+
+@media (max-width:1399px){
+
+    .software-feature-content .title{
+        font-size:42px;
+    }
+
+    .feature-item{
+        padding:20px;
+    }
+
+}
+
+
+
+/* ===========================
+   Laptop
+=========================== */
+
+@media (max-width:1199px){
+
+    .software-feature-content .title{
+        font-size:38px;
+    }
+
+    .software-feature-content p{
+        font-size:16px;
+    }
+
+    .feature-item h4{
+        font-size:20px;
+    }
+
+    .feature-item .icon{
+        width:55px;
+        height:55px;
+        min-width:55px;
+        font-size:20px;
+    }
+
+}
+
+
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width:991px){
+
+    .software-feature-section{
+        padding:90px 0;
+    }
+
+    .software-feature-section.pt-0{
+        padding-top:0;
+    }
+
+    .software-feature-content{
+        margin-top:45px;
+        text-align:center;
+    }
+
+    .software-feature-content .subtitle{
+        justify-content:center;
+    }
+
+    .software-feature-content .title{
+        font-size:34px;
+    }
+
+    .software-feature-content p{
+        margin-bottom:35px;
+    }
+
+    .feature-item{
+        text-align:left;
+    }
+
+    .software-feature-image{
+        margin-bottom:10px;
+    }
+
+}
+
+
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width:767px){
+
+    .software-feature-section{
+        padding:70px 0;
+    }
+
+    .software-feature-content{
+        margin-top:30px;
+    }
+
+    .software-feature-content .title{
+        font-size:30px;
+        line-height:1.3;
+    }
+
+    .software-feature-content p{
+        font-size:15px;
+        line-height:1.8;
+        margin-bottom:30px;
+    }
+
+    .software-feature-list{
+        gap:16px;
+    }
+
+    .feature-item{
+        padding:18px;
+        gap:15px;
+    }
+
+    .feature-item .icon{
+        width:52px;
+        height:52px;
+        min-width:52px;
+        font-size:18px;
+    }
+
+    .feature-item h4{
+        font-size:18px;
+        margin-bottom:8px;
+    }
+
+    .feature-item p{
+        font-size:14px;
+    }
+
+    .software-feature-image img{
+        border-radius:18px;
+    }
+
+}
+
+
+
+/* ===========================
+   Small Mobile
+=========================== */
+
+@media (max-width:575px){
+
+    .software-feature-content .title{
+        font-size:26px;
+    }
+
+    .software-feature-content p{
+        font-size:14px;
+    }
+
+    .feature-item{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        padding:18px;
+
+    }
+
+    .feature-item .icon{
+
+        margin-bottom:5px;
+
+    }
+
+}
+
+
+
+/* ===========================================================
+   IMAGE EFFECT
+=========================================================== */
+
+.software-feature-image img{
+
+    transition:.35s ease;
+
+}
+
+.software-feature-image:hover img{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 35px 80px rgba(0,0,0,.14);
+
+}
+
+
+
+/* ===========================================================
+   FEATURE ITEM EFFECT
+=========================================================== */
+
+.feature-item .icon{
+
+    transition:.35s;
+
+}
+
+.feature-item:hover .icon{
+
+    transform:rotate(-8deg) scale(1.05);
+
+}
+
+
+
+/* ===========================================================
+   SMOOTH TRANSITION
+=========================================================== */
+
+.software-feature-section *,
+.feature-item,
+.software-feature-image img{
+
+    transition:.35s ease;
 
 }
