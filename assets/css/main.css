@@ -14839,3 +14839,17 @@ font-size:30px;
     transition:.35s ease;
 
 }
+.fancy-box.style3 .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #4F7EFF; /* ya jo bhi theme color ho */
+}
+
+.fancy-box.style3 .icon i{
+    font-size: 28px;
+    color: #fff;
+}
