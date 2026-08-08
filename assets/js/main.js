@@ -3,7 +3,7 @@ Theme Name: Sosaiti
 Author: scriptotheme
 Author URI: https://themeforest.net/user/scriptotheme
 Version: 1.0.0 
-Description: Sosaiti- App Landing HTML Template <
+Description: Sosaiti- Smart Society Living <
 
 -------------------------------------------------------------------
 JS TABLE OF CONTENTS
