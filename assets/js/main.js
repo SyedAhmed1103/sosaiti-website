@@ -516,13 +516,13 @@ JS TABLE OF CONTENTS
             console.log("Target Section Index:", targetSectionIndex);
 
             if(targetSectionIndex === '#faq1') 
-                $('#howitworkimg').attr('src','assets/images/wp/wpThumb2_1.jpg');
+                $('#howitworkimg').attr('src','assets/images/wp/wpThumb2_1.webp');
             else if(targetSectionIndex === '#faq2') 
-                $('#howitworkimg').attr('src','assets/images/wp/wpThumb2_2.jpg');   
+                $('#howitworkimg').attr('src','assets/images/wp/wpThumb2_2.webp');   
             else if(targetSectionIndex === '#faq3') 
-                $('#howitworkimg').attr('src','assets/images/wp/wpThumb2_3.jpg'); 
+                $('#howitworkimg').attr('src','assets/images/wp/wpThumb2_3.webp'); 
             else 
-                $('#howitworkimg').attr('src','assets/images/wp/wpThumb2_4.jpg');  
+                $('#howitworkimg').attr('src','assets/images/wp/wpThumb2_4.webp');  
  
         });
 
