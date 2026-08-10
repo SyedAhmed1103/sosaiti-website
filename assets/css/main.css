@@ -14853,3 +14853,16 @@ font-size:30px;
     font-size: 28px;
     color: #fff;
 }
+
+
+@media (max-width: 499px) {
+   .header-logo img {
+        max-width: 210px;
+    }
+    .cursor-outer{
+      display: none;
+    }
+     .cursor-inner{
+      display: none;
+    }
+}
