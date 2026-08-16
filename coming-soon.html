@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#0B63F6">
+    <meta name="description" content="SOSAiTi mobile app is coming soon. Smarter society living is just around the corner.">
+    <meta name="robots" content="noindex, nofollow">
+    <title>SOSAiTi Mobile App – Coming Soon</title>
+
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo/logo.svg">
+    <link rel="shortcut icon" type="image/svg+xml" href="assets/images/logo/logo.svg">
+    <link rel="apple-touch-icon" href="assets/images/logo/logo2.svg">
+
+    <style>
+        :root {
+            --primary: #0B63F6;
+            --primary-dark: #084CC4;
+            --navy: #081B3A;
+            --text: #536174;
+            --muted: #8A97A8;
+            --white: #FFFFFF;
+            --line: rgba(11, 99, 246, .10);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            min-height: 100%;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                         Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text);
+            background:
+                radial-gradient(circle at 8% 18%, rgba(11, 99, 246, .12), transparent 28%),
+                radial-gradient(circle at 92% 84%, rgba(61, 157, 255, .13), transparent 30%),
+                linear-gradient(135deg, #F8FBFF 0%, #FFFFFF 48%, #F4F8FF 100%);
+            overflow-x: hidden;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button {
+            font: inherit;
+        }
+
+        .page {
+            min-height: 100vh;
+            min-height: 100svh;
+            position: relative;
+            isolation: isolate;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Decorative background */
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: -1;
+            filter: blur(.2px);
+        }
+
+        .orb.one {
+            width: 360px;
+            height: 360px;
+            left: -170px;
+            top: 8%;
+            background: rgba(11, 99, 246, .055);
+        }
+
+        .orb.two {
+            width: 280px;
+            height: 280px;
+            right: -110px;
+            bottom: 8%;
+            background: rgba(11, 99, 246, .06);
+        }
+
+        .grid {
+            position: absolute;
+            inset: 0;
+            z-index: -2;
+            opacity: .42;
+            background-image:
+                linear-gradient(rgba(11, 99, 246, .028) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(11, 99, 246, .028) 1px, transparent 1px);
+            background-size: 48px 48px;
+            mask-image: linear-gradient(to bottom, transparent, black 18%, black 82%, transparent);
+            -webkit-mask-image: linear-gradient(to bottom, transparent, black 18%, black 82%, transparent);
+        }
+
+        /* Minimal brand area — intentionally no navbar */
+        .brand {
+            width: min(1180px, calc(100% - 40px));
+            margin: 0 auto;
+            padding: 34px 0 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .brand img {
+            width: 255px;
+            height: auto;
+            max-height: 100px;
+            object-fit: contain;
+        }
+
+        /* Main */
+        .content {
+            flex: 1;
+            width: min(1180px, calc(100% - 40px));
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: minmax(0, 1.02fr) minmax(340px, .98fr);
+            align-items: center;
+            gap: 70px;
+            padding: 34px 0 58px;
+        }
+
+        .copy {
+            max-width: 650px;
+            animation: rise .8s ease both;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            padding: 9px 15px;
+            border: 1px solid rgba(11, 99, 246, .13);
+            border-radius: 999px;
+            background: rgba(255, 255, 255, .78);
+            color: var(--primary);
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: .12em;
+            text-transform: uppercase;
+            box-shadow: 0 10px 30px rgba(20, 54, 100, .06);
+        }
+
+        .dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: var(--primary);
+            box-shadow: 0 0 0 5px rgba(11, 99, 246, .10);
+        }
+
+        h1 {
+            margin-top: 24px;
+            color: var(--navy);
+            font-size: clamp(48px, 6vw, 82px);
+            line-height: .98;
+            letter-spacing: -0.055em;
+            font-weight: 800;
+        }
+
+        h1 span {
+            display: block;
+            color: var(--primary);
+        }
+
+        .lead {
+            max-width: 590px;
+            margin-top: 24px;
+            font-size: clamp(17px, 2vw, 20px);
+            line-height: 1.7;
+            color: var(--text);
+        }
+
+        .support {
+            margin-top: 17px;
+            font-size: 14px;
+            line-height: 1.7;
+            color: var(--muted);
+        }
+
+        /* Store buttons */
+        .stores {
+            margin-top: 32px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+        }
+
+        .store-btn {
+            min-width: 190px;
+            display: inline-flex;
+            align-items: center;
+            gap: 13px;
+            padding: 14px 18px;
+            border-radius: 15px;
+            color: #fff;
+            background: #091B37;
+            border: 1px solid rgba(9, 27, 55, .08);
+            box-shadow: 0 16px 32px rgba(9, 27, 55, .13);
+            transition: transform .25s ease, box-shadow .25s ease, background .25s ease;
+        }
+
+        .store-btn:hover {
+            transform: translateY(-4px);
+            background: #0D2447;
+            box-shadow: 0 22px 40px rgba(9, 27, 55, .18);
+        }
+
+        .store-btn .icon {
+            width: 27px;
+            height: 31px;
+            display: grid;
+            place-items: center;
+            flex: 0 0 auto;
+            font-size: 26px;
+            line-height: 1;
+        }
+
+        .store-btn small {
+            display: block;
+            font-size: 10px;
+            line-height: 1.2;
+            opacity: .72;
+            letter-spacing: .02em;
+        }
+
+        .store-btn strong {
+            display: block;
+            margin-top: 2px;
+            font-size: 17px;
+            line-height: 1.15;
+            font-weight: 700;
+        }
+
+        /* App visual */
+        .visual {
+            min-height: 570px;
+            position: relative;
+            display: grid;
+            place-items: center;
+            animation: floatIn .9s .12s ease both;
+        }
+
+        .halo {
+            position: absolute;
+            width: min(520px, 92%);
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background:
+                radial-gradient(circle at center,
+                    rgba(11, 99, 246, .13) 0 26%,
+                    rgba(11, 99, 246, .07) 27% 47%,
+                    rgba(11, 99, 246, .025) 48% 65%,
+                    transparent 66%);
+        }
+
+        .ring {
+            position: absolute;
+            width: 430px;
+            max-width: 78%;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            border: 1px solid rgba(11, 99, 246, .10);
+        }
+
+        .ring::before,
+        .ring::after {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            border: 1px solid rgba(11, 99, 246, .07);
+        }
+
+        .ring::before {
+            inset: 34px;
+        }
+
+        .ring::after {
+            inset: 78px;
+        }
+
+        .phone {
+            position: relative;
+            width: 270px;
+            height: 535px;
+            padding: 9px;
+            border-radius: 42px;
+            background: linear-gradient(145deg, #172E52, #071A36);
+            box-shadow:
+                0 38px 70px rgba(8, 34, 73, .25),
+                0 8px 20px rgba(8, 34, 73, .12),
+                inset 0 0 0 1px rgba(255,255,255,.10);
+            transform: rotate(4deg);
+            z-index: 3;
+        }
+
+        .phone::before {
+            content: "";
+            position: absolute;
+            left: -3px;
+            top: 118px;
+            width: 3px;
+            height: 56px;
+            border-radius: 3px 0 0 3px;
+            background: #19345D;
+        }
+
+        .phone::after {
+            content: "";
+            position: absolute;
+            right: -3px;
+            top: 145px;
+            width: 3px;
+            height: 76px;
+            border-radius: 0 3px 3px 0;
+            background: #19345D;
+        }
+
+        .screen {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 34px;
+            background: linear-gradient(180deg, #F8FBFF 0%, #EEF5FF 100%);
+            position: relative;
+        }
+
+        .notch {
+            position: absolute;
+            top: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 88px;
+            height: 25px;
+            border-radius: 0 0 17px 17px;
+            background: #071A36;
+            z-index: 5;
+        }
+
+        .app-top {
+            padding: 51px 20px 18px;
+            background: linear-gradient(135deg, var(--primary), #2D86FF);
+            color: #fff;
+            border-radius: 0 0 24px 24px;
+        }
+
+        .app-top .mini {
+            font-size: 10px;
+            opacity: .72;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+        }
+
+        .app-top h3 {
+            margin-top: 5px;
+            color: #fff;
+            font-size: 22px;
+            letter-spacing: -.02em;
+        }
+
+        .app-top p {
+            margin-top: 5px;
+            font-size: 11px;
+            opacity: .82;
+        }
+
+        .cards {
+            padding: 17px;
+            display: grid;
+            gap: 12px;
+        }
+
+        .app-card {
+            background: #fff;
+            border: 1px solid rgba(11, 99, 246, .07);
+            border-radius: 16px;
+            padding: 14px;
+            box-shadow: 0 10px 22px rgba(34, 69, 110, .06);
+        }
+
+        .app-card .row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        .app-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 11px;
+            background: #EAF2FF;
+            display: grid;
+            place-items: center;
+            color: var(--primary);
+            font-weight: 800;
+            font-size: 15px;
+        }
+
+        .app-card strong {
+            color: var(--navy);
+            font-size: 12px;
+        }
+
+        .app-card span {
+            color: #98A5B6;
+            font-size: 9px;
+        }
+
+        .amount {
+            color: var(--primary);
+            font-size: 12px;
+            font-weight: 800;
+        }
+
+        .bar {
+            margin-top: 12px;
+            height: 7px;
+            border-radius: 99px;
+            background: #EEF2F7;
+            overflow: hidden;
+        }
+
+        .bar i {
+            display: block;
+            width: 72%;
+            height: 100%;
+            border-radius: inherit;
+            background: linear-gradient(90deg, var(--primary), #66AEFF);
+        }
+
+        .floating-card {
+            position: absolute;
+            z-index: 4;
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            background: rgba(255, 255, 255, .92);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255,255,255,.85);
+            box-shadow: 0 20px 42px rgba(18, 57, 105, .14);
+            border-radius: 16px;
+            padding: 13px 16px;
+            animation: bob 4s ease-in-out infinite;
+        }
+
+        .floating-card.one {
+            top: 105px;
+            right: 5%;
+        }
+
+        .floating-card.two {
+            left: 4%;
+            bottom: 112px;
+            animation-delay: -1.8s;
+        }
+
+        .check {
+            width: 35px;
+            height: 35px;
+            border-radius: 11px;
+            display: grid;
+            place-items: center;
+            background: #E9F9F0;
+            color: #16A05D;
+            font-weight: 900;
+        }
+
+        .floating-card strong {
+            display: block;
+            color: var(--navy);
+            font-size: 12px;
+        }
+
+        .floating-card span {
+            display: block;
+            margin-top: 2px;
+            color: #8A97A8;
+            font-size: 10px;
+        }
+
+        /* Bottom */
+        .bottom {
+            width: min(1180px, calc(100% - 40px));
+            margin: 0 auto;
+            padding: 0 0 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            font-size: 12px;
+            color: #9AA6B5;
+        }
+
+        .back {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            color: var(--primary);
+            font-weight: 700;
+            transition: gap .2s ease;
+        }
+
+        .back:hover {
+            gap: 11px;
+        }
+
+        /* Modal */
+        .modal {
+            position: fixed;
+            inset: 0;
+            display: grid;
+            place-items: center;
+            padding: 24px;
+            background: rgba(5, 18, 39, .55);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            opacity: 0;
+            visibility: hidden;
+            transition: .25s ease;
+            z-index: 50;
+        }
+
+        .modal.show {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .modal-box {
+            width: min(440px, 100%);
+            background: #fff;
+            border-radius: 24px;
+            padding: 34px;
+            text-align: center;
+            box-shadow: 0 30px 80px rgba(0,0,0,.20);
+            transform: translateY(18px) scale(.98);
+            transition: .3s ease;
+        }
+
+        .modal.show .modal-box {
+            transform: translateY(0) scale(1);
+        }
+
+        .modal-icon {
+            width: 64px;
+            height: 64px;
+            margin: 0 auto 18px;
+            border-radius: 20px;
+            display: grid;
+            place-items: center;
+            background: #EAF2FF;
+            color: var(--primary);
+            font-size: 28px;
+            font-weight: 800;
+        }
+
+        .modal-box h2 {
+            color: var(--navy);
+            font-size: 28px;
+        }
+
+        .modal-box p {
+            margin-top: 10px;
+            line-height: 1.7;
+            font-size: 15px;
+        }
+
+        .close {
+            margin-top: 22px;
+            border: 0;
+            cursor: pointer;
+            padding: 11px 23px;
+            border-radius: 999px;
+            color: #fff;
+            background: var(--primary);
+            font-weight: 700;
+            box-shadow: 0 10px 24px rgba(11,99,246,.20);
+        }
+
+        /* Motion */
+        @keyframes rise {
+            from { opacity: 0; transform: translateY(28px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes floatIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes bob {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-9px); }
+        }
+
+        /* Responsive */
+        @media (max-width: 1000px) {
+            .content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 15px;
+                padding-top: 30px;
+            }
+
+            .copy {
+                max-width: 720px;
+                margin: 0 auto;
+            }
+
+            .lead,
+            .support {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .stores {
+                justify-content: center;
+            }
+
+            .visual {
+                min-height: 530px;
+            }
+
+            .floating-card.one {
+                right: 12%;
+            }
+
+            .floating-card.two {
+                left: 12%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .brand {
+                padding-top: 25px;
+            }
+
+            .brand img {
+                width: 255px;
+            }
+
+            .content {
+                width: min(100% - 28px, 560px);
+                padding-top: 22px;
+                padding-bottom: 22px;
+            }
+
+            h1 {
+                font-size: clamp(44px, 15vw, 64px);
+            }
+
+            .lead {
+                font-size: 16px;
+                line-height: 1.65;
+                margin-top: 19px;
+            }
+
+            .support {
+                font-size: 13px;
+            }
+
+            .stores {
+                gap: 10px;
+                margin-top: 25px;
+            }
+
+            .store-btn {
+                min-width: 0;
+                width: 100%;
+                max-width: 310px;
+                justify-content: flex-start;
+                padding: 13px 17px;
+            }
+
+            .visual {
+                min-height: 480px;
+                margin-top: -5px;
+            }
+
+            .phone {
+                width: 218px;
+                height: 432px;
+                border-radius: 34px;
+                padding: 7px;
+                transform: rotate(3deg);
+            }
+
+            .screen {
+                border-radius: 28px;
+            }
+
+            .notch {
+                width: 72px;
+                height: 21px;
+            }
+
+            .app-top {
+                padding: 42px 16px 15px;
+                border-radius: 0 0 20px 20px;
+            }
+
+            .app-top h3 {
+                font-size: 18px;
+            }
+
+            .cards {
+                padding: 13px;
+                gap: 9px;
+            }
+
+            .app-card {
+                padding: 11px;
+                border-radius: 13px;
+            }
+
+            .floating-card {
+                padding: 10px 12px;
+                border-radius: 13px;
+            }
+
+            .floating-card.one {
+                top: 60px;
+                right: 0;
+            }
+
+            .floating-card.two {
+                left: 0;
+                bottom: 70px;
+            }
+
+            .floating-card .check {
+                width: 29px;
+                height: 29px;
+                border-radius: 9px;
+            }
+
+            .floating-card strong {
+                font-size: 10px;
+            }
+
+            .floating-card span {
+                font-size: 8px;
+            }
+
+            .ring {
+                width: 340px;
+                max-width: 90%;
+            }
+
+            .bottom {
+                width: calc(100% - 28px);
+                padding-bottom: 20px;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .bottom > span {
+                display: none;
+            }
+
+            .orb.one {
+                width: 240px;
+                height: 240px;
+            }
+
+            .orb.two {
+                width: 210px;
+                height: 210px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: .01ms !important;
+                animation-iteration-count: 1 !important;
+                scroll-behavior: auto !important;
+                transition-duration: .01ms !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="page">
+
+        <div class="grid"></div>
+        <div class="orb one"></div>
+        <div class="orb two"></div>
+
+        <!-- Brand only: no header/navbar -->
+        <div class="brand">
+            <a href="index.html" aria-label="SOSAiTi Home">
+                <img src="assets/images/logo/logo.svg" alt="SOSAiTi">
+            </a>
+        </div>
+
+     <section class="content">
+
+    <div class="copy">
+
+        <div class="eyebrow">
+            <span class="dot"></span>
+            Mobile App · Coming Soon
+        </div>
+
+        <h1>
+            We're Almost
+            <span>Ready.</span>
+        </h1>
+
+        <p class="lead">
+            The SOSAiTi mobile app is currently in the final testing phase.
+            We’re making sure everything is ready for a smooth and reliable
+            experience before the official launch.
+        </p>
+
+        <p class="support">
+            We’re putting the final touches in place.
+            <strong>Our mobile app is launching soon. Stay tuned!</strong>
+        </p>
+
+        <div class="stores">
+
+            <a href="#" class="store-btn coming-soon"
+               data-store="App Store"
+               aria-label="SOSAiTi App Store – Coming Soon">
+
+                <span class="icon">▶</span>
+
+                <span>
+                    <small>COMING SOON ON</small>
+                    <strong>App Store</strong>
+                </span>
+
+            </a>
+
+            <a href="#" class="store-btn coming-soon"
+               data-store="Google Play"
+               aria-label="SOSAiTi Google Play – Coming Soon">
+
+                <span class="icon">▶</span>
+
+                <span>
+                    <small>COMING SOON ON</small>
+                    <strong>Google Play</strong>
+                </span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="visual" aria-hidden="true">
+
+        <div class="halo"></div>
+        <div class="ring"></div>
+
+        <div class="floating-card one">
+            <div class="check">✓</div>
+            <div>
+                <strong>Almost Ready</strong>
+                <span>Final testing in progress</span>
+            </div>
+        </div>
+
+        <div class="floating-card two">
+            <div class="check">✓</div>
+            <div>
+                <strong>Launching Soon</strong>
+                <span>Stay tuned for the launch</span>
+            </div>
+        </div>
+
+        <div class="phone">
+
+            <div class="screen">
+
+                <div class="notch"></div>
+
+                <div class="app-top">
+                    <div class="mini">Welcome to</div>
+                    <h3>SOSAiTi</h3>
+                    <p>Smart Society Living</p>
+                </div>
+
+                <div class="cards">
+
+                    <div class="app-card">
+                        <div class="row">
+                            <div style="display:flex;align-items:center;gap:10px;">
+                                <div class="app-icon">₹</div>
+                                <div>
+                                    <strong>Maintenance</strong>
+                                    <span>Due this month</span>
+                                </div>
+                            </div>
+                            <div class="amount">₹2,500</div>
+                        </div>
+                        <div class="bar"><i></i></div>
+                    </div>
+
+                    <div class="app-card">
+                        <div class="row">
+                            <div style="display:flex;align-items:center;gap:10px;">
+                                <div class="app-icon">✓</div>
+                                <div>
+                                    <strong>Recent Payment</strong>
+                                    <span>Receipt generated</span>
+                                </div>
+                            </div>
+                            <div class="amount">Paid</div>
+                        </div>
+                    </div>
+
+                    <div class="app-card">
+                        <div class="row">
+                            <div style="display:flex;align-items:center;gap:10px;">
+                                <div class="app-icon">!</div>
+                                <div>
+                                    <strong>Notice</strong>
+                                    <span>New society update</span>
+                                </div>
+                            </div>
+                            <div style="color:#8A97A8;font-size:17px;">›</div>
+                        </div>
+                    </div>
+
+                    <div class="app-card">
+                        <div class="row">
+                            <div style="display:flex;align-items:center;gap:10px;">
+                                <div class="app-icon">?</div>
+                                <div>
+                                    <strong>Complaint</strong>
+                                    <span>Track your request</span>
+                                </div>
+                            </div>
+                            <div style="color:#16A05D;font-size:11px;font-weight:800;">
+                                OPEN
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+        <div class="bottom">
+            <span>© <span id="year"></span> SOSAiTi. Smart Society Living.</span>
+
+            <a class="back" href="index.html">
+                ← Back to Website
+            </a>
+        </div>
+
+    </main>
+
+<!-- Coming Soon Modal -->
+<div class="modal" id="comingSoonModal" aria-hidden="true">
+
+    <div class="modal-box" role="dialog" aria-modal="true"
+         aria-labelledby="modalTitle">
+
+        <div class="modal-icon">🚀</div>
+
+        <h2 id="modalTitle">Coming Soon</h2>
+
+        <p id="modalText">
+            The SOSAiTi mobile app is currently under development.
+            We’re putting the finishing touches on the app and will
+            be launching soon on the App Store and Google Play.
+        </p>
+
+        <button class="close" type="button" id="closeModal">
+            Got it
+        </button>
+
+    </div>
+
+</div>
+
+    <script>
+        const modal = document.getElementById("comingSoonModal");
+        const modalText = document.getElementById("modalText");
+        const closeModal = document.getElementById("closeModal");
+        const storeButtons = document.querySelectorAll(".coming-soon");
+
+     storeButtons.forEach(button => {
+    button.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        const store = this.dataset.store || "this platform";
+
+        modalText.textContent =
+            `The SOSAiTi mobile app is coming soon to ${store}. We’re putting the finishing touches on the app and can’t wait to bring smarter society living to you.`;
+
+        modal.classList.add("show");
+        modal.setAttribute("aria-hidden", "false");
+        closeModal.focus();
+    });
+});
+function hideModal() {
+            modal.classList.remove("show");
+            modal.setAttribute("aria-hidden", "true");
+        }
+
+        closeModal.addEventListener("click", hideModal);
+
+        modal.addEventListener("click", function (event) {
+            if (event.target === modal) {
+                hideModal();
+            }
+        });
+
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "Escape" && modal.classList.contains("show")) {
+                hideModal();
+            }
+        });
+
+        document.getElementById("year").textContent =
+            new Date().getFullYear();
+    </script>
+
+</body>
+</html>
